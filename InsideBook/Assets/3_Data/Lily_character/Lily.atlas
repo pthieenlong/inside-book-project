@@ -1,0 +1,658 @@
+
+phan tach lam spine.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ban chan trai
+  rotate: false
+  xy: 889, 854
+  size: 130, 168
+  orig: 130, 168
+  offset: 0, 0
+  index: -1
+ban tay phai
+  rotate: false
+  xy: 914, 551
+  size: 92, 133
+  orig: 92, 133
+  offset: 0, 0
+  index: -1
+ban tay phai-Pax
+  rotate: true
+  xy: 222, 29
+  size: 92, 133
+  orig: 92, 133
+  offset: 0, 0
+  index: -1
+ban tay trai mo
+  rotate: false
+  xy: 583, 42
+  size: 127, 85
+  orig: 127, 85
+  offset: 0, 0
+  index: -1
+bap duoi trai
+  rotate: false
+  xy: 724, 192
+  size: 232, 293
+  orig: 232, 293
+  offset: 0, 0
+  index: -1
+bap tay phai
+  rotate: false
+  xy: 724, 19
+  size: 233, 171
+  orig: 233, 171
+  offset: 0, 0
+  index: -1
+canh tay phai
+  rotate: true
+  xy: 363, 8
+  size: 119, 218
+  orig: 119, 218
+  offset: 0, 0
+  index: -1
+canh tay phai-Pax
+  rotate: true
+  xy: 2, 2
+  size: 119, 218
+  orig: 119, 218
+  offset: 0, 0
+  index: -1
+canh tay trai
+  rotate: true
+  xy: 889, 686
+  size: 166, 119
+  orig: 166, 119
+  offset: 0, 0
+  index: -1
+dau
+  rotate: false
+  xy: 2, 123
+  size: 359, 356
+  orig: 359, 356
+  offset: 0, 0
+  index: -1
+dau-Pax
+  rotate: false
+  xy: 363, 129
+  size: 359, 356
+  orig: 359, 356
+  offset: 0, 0
+  index: -1
+mat mo
+  rotate: true
+  xy: 959, 57
+  size: 162, 54
+  orig: 162, 54
+  offset: 0, 0
+  index: -1
+mat nham
+  rotate: true
+  xy: 958, 386
+  size: 163, 57
+  orig: 163, 57
+  offset: 0, 0
+  index: -1
+mat nham-Pax
+  rotate: true
+  xy: 958, 221
+  size: 163, 57
+  orig: 163, 57
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 2, 481
+  size: 342, 541
+  orig: 342, 541
+  offset: 0, 0
+  index: -1
+than-Pax
+  rotate: true
+  xy: 346, 680
+  size: 342, 541
+  orig: 342, 541
+  offset: 0, 0
+  index: -1
+toc mai
+  rotate: false
+  xy: 346, 487
+  size: 282, 191
+  orig: 282, 191
+  offset: 0, 0
+  index: -1
+toc mai-Pax
+  rotate: false
+  xy: 630, 487
+  size: 282, 191
+  orig: 282, 191
+  offset: 0, 0
+  index: -1
+
+phan tach lam spine2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ban nam
+  rotate: false
+  xy: 933, 766
+  size: 81, 104
+  orig: 81, 104
+  offset: 0, 0
+  index: -1
+ban tay trai
+  rotate: false
+  xy: 789, 428
+  size: 147, 88
+  orig: 147, 88
+  offset: 0, 0
+  index: -1
+ban tay trai-Pax
+  rotate: true
+  xy: 933, 872
+  size: 147, 88
+  orig: 147, 88
+  offset: 0, 0
+  index: -1
+bap chan phai
+  rotate: false
+  xy: 789, 518
+  size: 218, 230
+  orig: 218, 230
+  offset: 0, 0
+  index: -1
+bap chan trai
+  rotate: false
+  xy: 770, 750
+  size: 161, 269
+  orig: 161, 269
+  offset: 0, 0
+  index: -1
+bap tay phai-Pax
+  rotate: true
+  xy: 304, 385
+  size: 233, 171
+  orig: 233, 171
+  offset: 0, 0
+  index: -1
+baptaytrai
+  rotate: false
+  xy: 304, 139
+  size: 152, 244
+  orig: 152, 244
+  offset: 0, 0
+  index: -1
+canh tay trai_Pax
+  rotate: false
+  xy: 304, 18
+  size: 166, 119
+  orig: 166, 119
+  offset: 0, 0
+  index: -1
+chamhoi
+  rotate: false
+  xy: 2, 612
+  size: 162, 407
+  orig: 162, 407
+  offset: 0, 0
+  index: -1
+day deo trai
+  rotate: true
+  xy: 166, 620
+  size: 97, 319
+  orig: 97, 319
+  offset: 0, 0
+  index: -1
+day deo trai_Pax
+  rotate: true
+  xy: 472, 2
+  size: 97, 319
+  orig: 97, 319
+  offset: 0, 0
+  index: -1
+light13_J1
+  rotate: false
+  xy: 2, 310
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J2
+  rotate: false
+  xy: 166, 719
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J3
+  rotate: false
+  xy: 468, 719
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J4
+  rotate: false
+  xy: 487, 417
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J5
+  rotate: false
+  xy: 477, 115
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J6
+  rotate: false
+  xy: 2, 8
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+water copy
+  rotate: false
+  xy: 779, 101
+  size: 224, 314
+  orig: 224, 314
+  offset: 0, 0
+  index: -1
+
+phan tach lam spine3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bap chan phai-Pax
+  rotate: false
+  xy: 739, 469
+  size: 218, 230
+  orig: 218, 230
+  offset: 0, 0
+  index: -1
+baptaytrai-Pax
+  rotate: false
+  xy: 739, 21
+  size: 152, 244
+  orig: 152, 244
+  offset: 0, 0
+  index: -1
+chamthan
+  rotate: false
+  xy: 2, 606
+  size: 82, 395
+  orig: 82, 395
+  offset: 0, 0
+  index: -1
+day deo phai
+  rotate: false
+  xy: 304, 351
+  size: 131, 348
+  orig: 131, 348
+  offset: 0, 0
+  index: -1
+day deo phai-Pax
+  rotate: false
+  xy: 606, 49
+  size: 131, 348
+  orig: 131, 348
+  offset: 0, 0
+  index: -1
+enercy6_Z1
+  rotate: false
+  xy: 739, 267
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light13_J10
+  rotate: false
+  xy: 304, 49
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J11
+  rotate: false
+  xy: 2, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J12
+  rotate: false
+  xy: 437, 399
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J13
+  rotate: false
+  xy: 690, 701
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J7
+  rotate: false
+  xy: 2, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J8
+  rotate: false
+  xy: 86, 701
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J9
+  rotate: false
+  xy: 388, 701
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+
+phan tach lam spine4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ban chan phai
+  rotate: false
+  xy: 798, 364
+  size: 167, 151
+  orig: 167, 151
+  offset: 0, 0
+  index: -1
+bap duoi phai
+  rotate: false
+  xy: 2, 606
+  size: 190, 313
+  orig: 190, 313
+  offset: 0, 0
+  index: -1
+bap duoi phai-Pax
+  rotate: false
+  xy: 304, 304
+  size: 190, 313
+  orig: 190, 313
+  offset: 0, 0
+  index: -1
+enercy6_Z2
+  rotate: false
+  xy: 798, 719
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+enercy6_Z3
+  rotate: false
+  xy: 798, 517
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light13_J14
+  rotate: false
+  xy: 2, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J15
+  rotate: false
+  xy: 194, 619
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J16
+  rotate: false
+  xy: 2, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J17
+  rotate: false
+  xy: 304, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J19
+  rotate: false
+  xy: 496, 619
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x1
+  rotate: false
+  xy: 496, 317
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x2
+  rotate: false
+  xy: 606, 15
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+
+phan tach lam spine5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ban chan phai-Pax
+  rotate: false
+  xy: 2, 857
+  size: 167, 151
+  orig: 167, 151
+  offset: 0, 0
+  index: -1
+enercy6_Z10
+  rotate: false
+  xy: 406, 606
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+enercy6_Z4
+  rotate: false
+  xy: 171, 808
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+enercy6_Z5
+  rotate: false
+  xy: 373, 808
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+enercy6_Z6
+  rotate: false
+  xy: 575, 808
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+enercy6_Z7
+  rotate: false
+  xy: 777, 808
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+enercy6_Z8
+  rotate: false
+  xy: 2, 606
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+enercy6_Z9
+  rotate: false
+  xy: 204, 606
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+smokeBlue_x3
+  rotate: false
+  xy: 608, 506
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x4
+  rotate: false
+  xy: 2, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x5
+  rotate: false
+  xy: 304, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x6
+  rotate: false
+  xy: 606, 204
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x7
+  rotate: false
+  xy: 2, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x8
+  rotate: false
+  xy: 304, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+
+phan tach lam spine6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smokeBlue_x10
+  rotate: false
+  xy: 2, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x11
+  rotate: false
+  xy: 304, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x12
+  rotate: false
+  xy: 2, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x13
+  rotate: false
+  xy: 304, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x14
+  rotate: false
+  xy: 606, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x15
+  rotate: false
+  xy: 304, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x16
+  rotate: false
+  xy: 606, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x17
+  rotate: false
+  xy: 606, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x9
+  rotate: false
+  xy: 2, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+
+phan tach lam spine7.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smokeBlue_x18
+  rotate: false
+  xy: 2, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x19
+  rotate: false
+  xy: 2, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x20
+  rotate: false
+  xy: 304, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+smokeBlue_x21
+  rotate: false
+  xy: 2, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1

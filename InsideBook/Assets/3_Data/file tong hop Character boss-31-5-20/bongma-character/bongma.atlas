@@ -1,0 +1,927 @@
+
+bongma.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light84_B1
+  rotate: false
+  xy: 820, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B2
+  rotate: false
+  xy: 820, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+choangvang
+  rotate: true
+  xy: 859, 893
+  size: 113, 103
+  orig: 113, 103
+  offset: 0, 0
+  index: -1
+dau
+  rotate: false
+  xy: 441, 60
+  size: 377, 344
+  orig: 377, 344
+  offset: 0, 0
+  index: -1
+light90_Z2
+  rotate: true
+  xy: 2, 7
+  size: 397, 437
+  orig: 397, 437
+  offset: 0, 0
+  index: -1
+luoihai
+  rotate: false
+  xy: 2, 406
+  size: 855, 600
+  orig: 855, 600
+  offset: 0, 0
+  index: -1
+mat
+  rotate: true
+  xy: 859, 778
+  size: 113, 103
+  orig: 113, 103
+  offset: 0, 0
+  index: -1
+mat - choang
+  rotate: true
+  xy: 859, 663
+  size: 113, 103
+  orig: 113, 103
+  offset: 0, 0
+  index: -1
+
+bongma2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ao choang vaitrai
+  rotate: true
+  xy: 208, 25
+  size: 332, 475
+  orig: 332, 475
+  offset: 0, 0
+  index: -1
+light90_Z1
+  rotate: true
+  xy: 685, 46
+  size: 311, 325
+  orig: 311, 325
+  offset: 0, 0
+  index: -1
+linh hon
+  rotate: false
+  xy: 2, 2
+  size: 204, 355
+  orig: 204, 355
+  offset: 0, 0
+  index: -1
+luoihaiphatsang
+  rotate: false
+  xy: 2, 359
+  size: 855, 600
+  orig: 855, 600
+  offset: 0, 0
+  index: -1
+
+bongma3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light87_G1
+  rotate: false
+  xy: 2, 686
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G10
+  rotate: false
+  xy: 2, 173
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G11
+  rotate: false
+  xy: 304, 173
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G12
+  rotate: false
+  xy: 606, 173
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G13
+  rotate: false
+  xy: 2, 2
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G14
+  rotate: false
+  xy: 304, 2
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G15
+  rotate: false
+  xy: 606, 2
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G2
+  rotate: false
+  xy: 304, 686
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G3
+  rotate: false
+  xy: 606, 686
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G4
+  rotate: false
+  xy: 2, 515
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G5
+  rotate: false
+  xy: 304, 515
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G6
+  rotate: false
+  xy: 606, 515
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G7
+  rotate: false
+  xy: 2, 344
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G8
+  rotate: false
+  xy: 304, 344
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G9
+  rotate: false
+  xy: 606, 344
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+
+bongma4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light84_B10
+  rotate: false
+  xy: 406, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B11
+  rotate: false
+  xy: 608, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B12
+  rotate: false
+  xy: 810, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B13
+  rotate: false
+  xy: 2, 234
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B14
+  rotate: false
+  xy: 204, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B15
+  rotate: false
+  xy: 406, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B16
+  rotate: false
+  xy: 608, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B17
+  rotate: false
+  xy: 810, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B18
+  rotate: false
+  xy: 2, 32
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B19
+  rotate: false
+  xy: 204, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B20
+  rotate: false
+  xy: 406, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B21
+  rotate: false
+  xy: 608, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B22
+  rotate: false
+  xy: 810, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B3
+  rotate: false
+  xy: 2, 638
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B4
+  rotate: false
+  xy: 204, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B5
+  rotate: false
+  xy: 406, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B6
+  rotate: false
+  xy: 608, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B7
+  rotate: false
+  xy: 810, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B8
+  rotate: false
+  xy: 2, 436
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light84_B9
+  rotate: false
+  xy: 204, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+Light87_G16
+  rotate: false
+  xy: 2, 840
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+Light87_G17
+  rotate: false
+  xy: 2, 840
+  size: 300, 169
+  orig: 300, 169
+  offset: 0, 0
+  index: -1
+ao choang copy
+  rotate: false
+  xy: 304, 810
+  size: 321, 199
+  orig: 321, 199
+  offset: 0, 0
+  index: -1
+ao choang sau
+  rotate: false
+  xy: 627, 810
+  size: 321, 199
+  orig: 321, 199
+  offset: 0, 0
+  index: -1
+
+bongma5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light97_K1
+  rotate: false
+  xy: 2, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K10
+  rotate: false
+  xy: 810, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K11
+  rotate: false
+  xy: 2, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K12
+  rotate: false
+  xy: 204, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K13
+  rotate: false
+  xy: 406, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K14
+  rotate: false
+  xy: 608, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K15
+  rotate: false
+  xy: 810, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K16
+  rotate: false
+  xy: 2, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K17
+  rotate: false
+  xy: 204, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K19
+  rotate: false
+  xy: 406, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K2
+  rotate: false
+  xy: 204, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K20
+  rotate: false
+  xy: 608, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K21
+  rotate: false
+  xy: 810, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K22
+  rotate: false
+  xy: 2, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K23
+  rotate: false
+  xy: 204, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K3
+  rotate: false
+  xy: 406, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K4
+  rotate: false
+  xy: 608, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K5
+  rotate: false
+  xy: 810, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K6
+  rotate: false
+  xy: 2, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K7
+  rotate: false
+  xy: 204, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K8
+  rotate: false
+  xy: 406, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+light97_K9
+  rotate: false
+  xy: 608, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+
+bongma6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baotay
+  rotate: false
+  xy: 265, 675
+  size: 233, 231
+  orig: 233, 231
+  offset: 0, 0
+  index: -1
+canhtay
+  rotate: true
+  xy: 2, 689
+  size: 217, 261
+  orig: 217, 261
+  offset: 0, 0
+  index: -1
+light13_J2
+  rotate: false
+  xy: 500, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J3
+  rotate: false
+  xy: 2, 373
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J4
+  rotate: false
+  xy: 304, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J5
+  rotate: false
+  xy: 606, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J6
+  rotate: false
+  xy: 2, 71
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J7
+  rotate: false
+  xy: 304, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J8
+  rotate: false
+  xy: 606, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+
+bongma7.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light13_J10
+  rotate: false
+  xy: 304, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J11
+  rotate: false
+  xy: 606, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J12
+  rotate: false
+  xy: 2, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J13
+  rotate: false
+  xy: 304, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J14
+  rotate: false
+  xy: 606, 304
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J15
+  rotate: false
+  xy: 2, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J16
+  rotate: false
+  xy: 304, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J17
+  rotate: false
+  xy: 606, 2
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+light13_J9
+  rotate: false
+  xy: 2, 606
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+
+bongma8.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z12
+  rotate: false
+  xy: 2, 2
+  size: 850, 854
+  orig: 850, 854
+  offset: 0, 0
+  index: -1
+
+bongma9.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z11
+  rotate: false
+  xy: 2, 2
+  size: 846, 851
+  orig: 846, 851
+  offset: 0, 0
+  index: -1
+
+bongma10.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bap tay
+  rotate: true
+  xy: 2, 687
+  size: 319, 426
+  orig: 319, 426
+  offset: 0, 0
+  index: -1
+light90_Z3
+  rotate: true
+  xy: 2, 2
+  size: 573, 646
+  orig: 573, 646
+  offset: 0, 0
+  index: -1
+mat xuong
+  rotate: true
+  xy: 430, 577
+  size: 429, 486
+  orig: 429, 486
+  offset: 0, 0
+  index: -1
+
+bongma11.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z10
+  rotate: false
+  xy: 2, 2
+  size: 841, 841
+  orig: 841, 841
+  offset: 0, 0
+  index: -1
+
+bongma12.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z9
+  rotate: false
+  xy: 2, 2
+  size: 836, 829
+  orig: 836, 829
+  offset: 0, 0
+  index: -1
+
+bongma13.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z8
+  rotate: false
+  xy: 2, 2
+  size: 821, 802
+  orig: 821, 802
+  offset: 0, 0
+  index: -1
+
+bongma14.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light13_J1
+  rotate: false
+  xy: 2, 2
+  size: 800, 800
+  orig: 800, 800
+  offset: 0, 0
+  index: -1
+
+bongma15.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light13_J18
+  rotate: false
+  xy: 2, 2
+  size: 800, 800
+  orig: 800, 800
+  offset: 0, 0
+  index: -1
+
+bongma16.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z7
+  rotate: false
+  xy: 2, 2
+  size: 802, 780
+  orig: 802, 780
+  offset: 0, 0
+  index: -1
+
+bongma17.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z15
+  rotate: false
+  xy: 2, 2
+  size: 819, 761
+  orig: 819, 761
+  offset: 0, 0
+  index: -1
+
+bongma18.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z14
+  rotate: false
+  xy: 2, 2
+  size: 816, 759
+  orig: 816, 759
+  offset: 0, 0
+  index: -1
+
+bongma19.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z13
+  rotate: false
+  xy: 2, 2
+  size: 811, 755
+  orig: 811, 755
+  offset: 0, 0
+  index: -1
+
+bongma20.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z6
+  rotate: false
+  xy: 2, 2
+  size: 775, 756
+  orig: 775, 756
+  offset: 0, 0
+  index: -1
+
+bongma21.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z17
+  rotate: false
+  xy: 2, 2
+  size: 753, 764
+  orig: 753, 764
+  offset: 0, 0
+  index: -1
+
+bongma22.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z16
+  rotate: false
+  xy: 2, 2
+  size: 752, 761
+  orig: 752, 761
+  offset: 0, 0
+  index: -1
+
+bongma23.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ao choang
+  rotate: false
+  xy: 2, 2
+  size: 724, 760
+  orig: 724, 760
+  offset: 0, 0
+  index: -1
+
+bongma24.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z5
+  rotate: false
+  xy: 2, 2
+  size: 747, 735
+  orig: 747, 735
+  offset: 0, 0
+  index: -1
+
+bongma25.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z4
+  rotate: false
+  xy: 2, 2
+  size: 635, 673
+  orig: 635, 673
+  offset: 0, 0
+  index: -1

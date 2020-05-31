@@ -1,0 +1,426 @@
+
+quai con.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M1
+  rotate: false
+  xy: 448, 49
+  size: 100, 109
+  orig: 100, 109
+  offset: 0, 0
+  index: -1
+Light80_M19
+  rotate: false
+  xy: 854, 593
+  size: 165, 165
+  orig: 165, 165
+  offset: 0, 0
+  index: -1
+Light80_M20
+  rotate: false
+  xy: 297, 8
+  size: 149, 150
+  orig: 149, 150
+  offset: 0, 0
+  index: -1
+light90_Z12
+  rotate: false
+  xy: 2, 160
+  size: 850, 854
+  orig: 850, 854
+  offset: 0, 0
+  index: -1
+mat
+  rotate: false
+  xy: 2, 2
+  size: 293, 156
+  orig: 293, 156
+  offset: 0, 0
+  index: -1
+mieng
+  rotate: true
+  xy: 854, 760
+  size: 254, 79
+  orig: 254, 79
+  offset: 0, 0
+  index: -1
+
+quai con2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z11
+  rotate: false
+  xy: 2, 2
+  size: 846, 851
+  orig: 846, 851
+  offset: 0, 0
+  index: -1
+
+quai con3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z10
+  rotate: false
+  xy: 2, 2
+  size: 841, 841
+  orig: 841, 841
+  offset: 0, 0
+  index: -1
+
+quai con4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z9
+  rotate: false
+  xy: 2, 2
+  size: 836, 829
+  orig: 836, 829
+  offset: 0, 0
+  index: -1
+
+quai con5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M18
+  rotate: false
+  xy: 2, 2
+  size: 209, 195
+  orig: 209, 195
+  offset: 0, 0
+  index: -1
+light90_Z8
+  rotate: false
+  xy: 2, 199
+  size: 821, 802
+  orig: 821, 802
+  offset: 0, 0
+  index: -1
+
+quai con6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M14
+  rotate: true
+  xy: 358, 2
+  size: 366, 411
+  orig: 366, 411
+  offset: 0, 0
+  index: -1
+Light80_M15
+  rotate: true
+  xy: 2, 31
+  size: 337, 354
+  orig: 337, 354
+  offset: 0, 0
+  index: -1
+Light80_M16
+  rotate: false
+  xy: 271, 702
+  size: 307, 287
+  orig: 307, 287
+  offset: 0, 0
+  index: -1
+Light80_M17
+  rotate: false
+  xy: 2, 759
+  size: 267, 230
+  orig: 267, 230
+  offset: 0, 0
+  index: -1
+Light80_M2
+  rotate: false
+  xy: 580, 691
+  size: 435, 298
+  orig: 435, 298
+  offset: 0, 0
+  index: -1
+light90_Z1
+  rotate: true
+  xy: 2, 389
+  size: 311, 325
+  orig: 311, 325
+  offset: 0, 0
+  index: -1
+linh hon
+  rotate: true
+  xy: 329, 370
+  size: 319, 414
+  orig: 319, 414
+  offset: 0, 0
+  index: -1
+
+quai con7.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M12
+  rotate: true
+  xy: 443, 2
+  size: 400, 515
+  orig: 400, 515
+  offset: 0, 0
+  index: -1
+Light80_M13
+  rotate: true
+  xy: 2, 421
+  size: 380, 473
+  orig: 380, 473
+  offset: 0, 0
+  index: -1
+Light80_M3
+  rotate: false
+  xy: 2, 7
+  size: 439, 412
+  orig: 439, 412
+  offset: 0, 0
+  index: -1
+light90_Z2
+  rotate: true
+  xy: 477, 404
+  size: 397, 437
+  orig: 397, 437
+  offset: 0, 0
+  index: -1
+
+quai con8.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M10
+  rotate: false
+  xy: 481, 2
+  size: 433, 560
+  orig: 433, 560
+  offset: 0, 0
+  index: -1
+Light80_M11
+  rotate: true
+  xy: 2, 589
+  size: 415, 543
+  orig: 415, 543
+  offset: 0, 0
+  index: -1
+Light80_M4
+  rotate: false
+  xy: 547, 564
+  size: 441, 440
+  orig: 441, 440
+  offset: 0, 0
+  index: -1
+mat na
+  rotate: false
+  xy: 2, 139
+  size: 477, 448
+  orig: 477, 448
+  offset: 0, 0
+  index: -1
+
+quai con9.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z7
+  rotate: false
+  xy: 2, 2
+  size: 802, 780
+  orig: 802, 780
+  offset: 0, 0
+  index: -1
+
+quai con10.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z15
+  rotate: false
+  xy: 2, 2
+  size: 819, 761
+  orig: 819, 761
+  offset: 0, 0
+  index: -1
+
+quai con11.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z14
+  rotate: false
+  xy: 2, 2
+  size: 816, 759
+  orig: 816, 759
+  offset: 0, 0
+  index: -1
+
+quai con12.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z13
+  rotate: false
+  xy: 2, 2
+  size: 811, 755
+  orig: 811, 755
+  offset: 0, 0
+  index: -1
+
+quai con13.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z6
+  rotate: false
+  xy: 2, 2
+  size: 775, 756
+  orig: 775, 756
+  offset: 0, 0
+  index: -1
+
+quai con14.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z17
+  rotate: false
+  xy: 2, 2
+  size: 753, 764
+  orig: 753, 764
+  offset: 0, 0
+  index: -1
+
+quai con15.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z16
+  rotate: false
+  xy: 2, 2
+  size: 752, 761
+  orig: 752, 761
+  offset: 0, 0
+  index: -1
+
+quai con16.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ao choang
+  rotate: false
+  xy: 2, 2
+  size: 724, 760
+  orig: 724, 760
+  offset: 0, 0
+  index: -1
+
+quai con17.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z5
+  rotate: false
+  xy: 2, 2
+  size: 747, 735
+  orig: 747, 735
+  offset: 0, 0
+  index: -1
+
+quai con18.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M5
+  rotate: true
+  xy: 2, 460
+  size: 437, 577
+  orig: 437, 577
+  offset: 0, 0
+  index: -1
+Light80_M9
+  rotate: true
+  xy: 2, 2
+  size: 456, 576
+  orig: 456, 576
+  offset: 0, 0
+  index: -1
+
+quai con19.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M7
+  rotate: true
+  xy: 2, 2
+  size: 503, 614
+  orig: 503, 614
+  offset: 0, 0
+  index: -1
+Light80_M8
+  rotate: true
+  xy: 2, 507
+  size: 477, 588
+  orig: 477, 588
+  offset: 0, 0
+  index: -1
+
+quai con20.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z4
+  rotate: false
+  xy: 2, 2
+  size: 635, 673
+  orig: 635, 673
+  offset: 0, 0
+  index: -1
+
+quai con21.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z3
+  rotate: false
+  xy: 2, 2
+  size: 573, 646
+  orig: 573, 646
+  offset: 0, 0
+  index: -1
+
+quai con22.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light80_M6
+  rotate: false
+  xy: 2, 2
+  size: 530, 629
+  orig: 530, 629
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,333 @@
+
+quaibohung.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 2
+  rotate: true
+  xy: 744, 59
+  size: 468, 140
+  orig: 468, 140
+  offset: 0, 0
+  index: -1
+banchanphai
+  rotate: true
+  xy: 886, 17
+  size: 87, 93
+  orig: 87, 93
+  offset: 0, 0
+  index: -1
+bapchanphai
+  rotate: false
+  xy: 886, 327
+  size: 127, 200
+  orig: 127, 200
+  offset: 0, 0
+  index: -1
+bapchantrai
+  rotate: false
+  xy: 886, 106
+  size: 90, 219
+  orig: 90, 219
+  offset: 0, 0
+  index: -1
+canhtay
+  rotate: false
+  xy: 743, 4
+  size: 140, 53
+  orig: 140, 53
+  offset: 0, 0
+  index: -1
+chanphai
+  rotate: false
+  xy: 978, 246
+  size: 34, 79
+  orig: 34, 79
+  offset: 0, 0
+  index: -1
+light90_Z13
+  rotate: false
+  xy: 2, 244
+  size: 740, 778
+  orig: 740, 778
+  offset: 0, 0
+  index: -1
+sung
+  rotate: false
+  xy: 744, 529
+  size: 267, 493
+  orig: 267, 493
+  offset: 0, 0
+  index: -1
+vukhi
+  rotate: true
+  xy: 2, 2
+  size: 240, 739
+  orig: 240, 739
+  offset: 0, 0
+  index: -1
+
+quaibohung2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+banchantrai
+  rotate: false
+  xy: 847, 5
+  size: 67, 112
+  orig: 67, 112
+  offset: 0, 0
+  index: -1
+bantay
+  rotate: false
+  xy: 738, 2
+  size: 107, 115
+  orig: 107, 115
+  offset: 0, 0
+  index: -1
+baptay
+  rotate: true
+  xy: 738, 119
+  size: 203, 158
+  orig: 203, 158
+  offset: 0, 0
+  index: -1
+chantrai
+  rotate: false
+  xy: 898, 248
+  size: 53, 74
+  orig: 53, 74
+  offset: 0, 0
+  index: -1
+light90_Z17
+  rotate: false
+  xy: 2, 34
+  size: 734, 764
+  orig: 734, 764
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 738, 324
+  size: 282, 474
+  orig: 282, 474
+  offset: 0, 0
+  index: -1
+
+quaibohung3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ao choang to
+  rotate: true
+  xy: 414, 2
+  size: 438, 558
+  orig: 438, 558
+  offset: 0, 0
+  index: -1
+aochoangnho
+  rotate: true
+  xy: 2, 466
+  size: 301, 349
+  orig: 301, 349
+  offset: 0, 0
+  index: -1
+light90_Z1
+  rotate: false
+  xy: 353, 442
+  size: 363, 325
+  orig: 363, 325
+  offset: 0, 0
+  index: -1
+light90_Z2
+  rotate: true
+  xy: 2, 43
+  size: 397, 410
+  orig: 397, 410
+  offset: 0, 0
+  index: -1
+
+quaibohung4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z14
+  rotate: false
+  xy: 2, 2
+  size: 757, 759
+  orig: 757, 759
+  offset: 0, 0
+  index: -1
+
+quaibohung5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z16
+  rotate: false
+  xy: 2, 2
+  size: 752, 761
+  orig: 752, 761
+  offset: 0, 0
+  index: -1
+
+quaibohung6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z15
+  rotate: false
+  xy: 2, 2
+  size: 747, 761
+  orig: 747, 761
+  offset: 0, 0
+  index: -1
+
+quaibohung7.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z12
+  rotate: false
+  xy: 2, 2
+  size: 738, 738
+  orig: 738, 738
+  offset: 0, 0
+  index: -1
+
+quaibohung8.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z11
+  rotate: false
+  xy: 2, 2
+  size: 726, 740
+  orig: 726, 740
+  offset: 0, 0
+  index: -1
+
+quaibohung9.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z10
+  rotate: false
+  xy: 2, 2
+  size: 714, 732
+  orig: 714, 732
+  offset: 0, 0
+  index: -1
+
+quaibohung10.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z6
+  rotate: false
+  xy: 2, 2
+  size: 720, 711
+  orig: 720, 711
+  offset: 0, 0
+  index: -1
+
+quaibohung11.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z9
+  rotate: false
+  xy: 2, 2
+  size: 708, 718
+  orig: 708, 718
+  offset: 0, 0
+  index: -1
+
+quaibohung12.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z8
+  rotate: false
+  xy: 2, 2
+  size: 687, 707
+  orig: 687, 707
+  offset: 0, 0
+  index: -1
+
+quaibohung13.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z7
+  rotate: false
+  xy: 2, 2
+  size: 684, 690
+  orig: 684, 690
+  offset: 0, 0
+  index: -1
+
+quaibohung14.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z5
+  rotate: false
+  xy: 2, 2
+  size: 622, 669
+  orig: 622, 669
+  offset: 0, 0
+  index: -1
+
+quaibohung15.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z4
+  rotate: false
+  xy: 2, 2
+  size: 600, 639
+  orig: 600, 639
+  offset: 0, 0
+  index: -1
+
+quaibohung16.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light90_Z3
+  rotate: false
+  xy: 2, 2
+  size: 549, 595
+  orig: 549, 595
+  offset: 0, 0
+  index: -1
+
+quaibohung17.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dau
+  rotate: false
+  xy: 2, 2
+  size: 544, 556
+  orig: 544, 556
+  offset: 0, 0
+  index: -1
