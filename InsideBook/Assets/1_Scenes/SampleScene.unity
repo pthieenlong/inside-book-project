@@ -1011,15 +1011,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 504957584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e82dff63784016a4198e5f77c1711d07, type: 3}
+  m_Script: {fileID: 11500000, guid: 00c7f3d36a1810a4c9797d5697778951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Object: {fileID: 504957587}
-  gameObject: {fileID: 0}
-  speed: 30
-  begin: 0
-  end: 0
-  isMainCharacter: 0
+  rb: {fileID: 504957587}
+  speed: 300
+  jumpForce: 10
+  isJump: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,6 +1844,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
