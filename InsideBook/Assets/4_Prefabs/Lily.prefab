@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 9107184476453827737}
   - component: {fileID: 9107184476453827734}
   - component: {fileID: 9107184476453827735}
+  - component: {fileID: 489444741}
+  - component: {fileID: 489444742}
   m_Layer: 0
   m_Name: Lily
   m_TagString: Untagged
@@ -29,7 +31,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9107184476453827728}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.17, y: -2.41, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
@@ -62,19 +64,17 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c0de449702ac4ab40b46d6b20c3e8d77, type: 2}
-  - {fileID: 2100000, guid: 9b9466b8454477a44a77f5f6cdb21400, type: 2}
-  - {fileID: 2100000, guid: c0de449702ac4ab40b46d6b20c3e8d77, type: 2}
-  - {fileID: 2100000, guid: 9b9466b8454477a44a77f5f6cdb21400, type: 2}
-  - {fileID: 2100000, guid: c0de449702ac4ab40b46d6b20c3e8d77, type: 2}
-  - {fileID: 2100000, guid: 84c5924c09ed1d743980d84c982ea523, type: 2}
-  - {fileID: 2100000, guid: f66bbfd29b33b484b9e51fe1df15f1d3, type: 2}
-  - {fileID: 2100000, guid: c0de449702ac4ab40b46d6b20c3e8d77, type: 2}
-  - {fileID: 2100000, guid: f66bbfd29b33b484b9e51fe1df15f1d3, type: 2}
-  - {fileID: 2100000, guid: 9b9466b8454477a44a77f5f6cdb21400, type: 2}
-  - {fileID: 2100000, guid: c0de449702ac4ab40b46d6b20c3e8d77, type: 2}
-  - {fileID: 2100000, guid: f66bbfd29b33b484b9e51fe1df15f1d3, type: 2}
-  - {fileID: 2100000, guid: 84c5924c09ed1d743980d84c982ea523, type: 2}
+  - {fileID: 2100000, guid: 46333e07e16181d47b1fbb37fdd82310, type: 2}
+  - {fileID: 2100000, guid: 2ee69f75a43d19a4aaec844ae5416110, type: 2}
+  - {fileID: 2100000, guid: 46333e07e16181d47b1fbb37fdd82310, type: 2}
+  - {fileID: 2100000, guid: 2ee69f75a43d19a4aaec844ae5416110, type: 2}
+  - {fileID: 2100000, guid: 46333e07e16181d47b1fbb37fdd82310, type: 2}
+  - {fileID: 2100000, guid: da0f87dc4ca331449a6be2df4c9d33c9, type: 2}
+  - {fileID: 2100000, guid: 39218e7491461654799cf8a1ce0e200e, type: 2}
+  - {fileID: 2100000, guid: 46333e07e16181d47b1fbb37fdd82310, type: 2}
+  - {fileID: 2100000, guid: 39218e7491461654799cf8a1ce0e200e, type: 2}
+  - {fileID: 2100000, guid: 2ee69f75a43d19a4aaec844ae5416110, type: 2}
+  - {fileID: 2100000, guid: 46333e07e16181d47b1fbb37fdd82310, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 4901d9df1177a4f49bc4f6ccbdf118c1, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: f0c66aeb5385ee142919b4f6df9f0764, type: 2}
   initialSkinName: default
   initialFlipX: 0
   initialFlipY: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   calculateTangents: 0
   logErrors: 0
   disableRenderingOnOverride: 1
-  _animationName: tich no
+  _animationName: tho
   loop: 1
   timeScale: 1
 --- !u!50 &9107184476453827737
@@ -141,12 +141,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &9107184476453827734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -185,9 +185,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82dff63784016a4198e5f77c1711d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Object: {fileID: 0}
-  gameObject: {fileID: 0}
-  speed: 30
-  begin: 0
-  end: 0
-  isMainCharacter: 0
+  _Object: {fileID: 9107184476453827737}
+  speed: 5
+  jumpForce: 10
+--- !u!114 &489444741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107184476453827728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c7f3d36a1810a4c9797d5697778951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveController: {fileID: 9107184476453827735}
+  AnimLily: {fileID: 489444742}
+--- !u!114 &489444742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107184476453827728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761f3d3bc7c9519439429e892fd5e115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SAnim: {fileID: 9107184476453827731}

@@ -5,17 +5,19 @@ using UnityEngine;
 public static class Utils
 {
     #region Vector Extensions
-    public static void V3SetX(this Vector3 v, float x)
+    public static Vector3 V3SetX(this Vector3 v, float x)
     {
         Vector3 tempV = v;
         tempV.x = x;
         v = tempV;
+        return v;
     }
-    public static void V3SetY(this Vector3 v, float y)
+    public static Vector3 V3SetY(this Vector3 v, float y)
     {
         Vector3 tempV = v;
         tempV.y = y;
         v = tempV;
+        return v;
     }
 
     public static Vector2 V2SetX(this Vector2 v, float x)

@@ -6,38 +6,36 @@ public class MoveObject : MonoBehaviour
 {
     public Rigidbody2D _Object;
     public float speed = 20f;
-    //public float begin, end;
-    //public bool isMainCharacter = false;
+    public float jumpForce = 10f;
+
     void Start()
     {
         _Object.GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    public void StopMoving()
     {
-        //if (isMainCharacter)
-        
-            // MovingLeft();
-            // if(Input.GetKeyDown(KeyCode.A)){
-            //     Debug.Log("a");
-            // }   
+        _Object.velocity = _Object.velocity.V2SetX(0);
     }
-    public void ObjectMoving() //object preriod moving
-    { 
-        
-        // if(gameObject.transform.position.x = begin)
-        // {
-        //    MovingRight();
-        // }
-        // if(gameObject.transform.position.x = end) {
-        //    MovingLeft();
-        // }
-    }
-    public void MovingRight() {
-        _Object.velocity = Vector2.right * speed * Time.deltaTime;
+
+    public void MovingRight()
+    {
+        // _Object.velocity = Vector2.right * speed * Time.deltaTime;
+        _Object.velocity = _Object.velocity.V2SetX(Vector2.right.x * speed);
     }
     public void MovingLeft()
     {
-        _Object.velocity = Vector2.left * speed * Time.deltaTime;
+        // _Object.velocity = Vector2.left * speed * Time.deltaTime;
+        _Object.velocity = _Object.velocity.V2SetX(Vector2.left.x * speed);
+    }
+
+    public void Jump()
+    {
+        _Object.velocity = _Object.velocity.V2SetY(jumpForce);
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawRay(_Object.transform.position, _Object.velocity);
     }
 }

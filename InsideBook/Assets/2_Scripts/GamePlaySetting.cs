@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class GamePlaySetting
 {
-    public const float BaseMoveSpeed = 300;
+    public static float SoundVolume = 1;
+    public static float MusicVolume = 1;
 }
