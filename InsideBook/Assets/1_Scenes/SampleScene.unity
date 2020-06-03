@@ -990,10 +990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c7f3d36a1810a4c9797d5697778951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 489444737}
-  speed: 500
-  jumpForce: 10
-  isJump: 0
+  moveController: {fileID: 0}
+  AnimLily: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1003,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1020,6 +1019,25 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb5205d224ef4e8786e20610f908ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 489444733}
+  cameraSpeed: 0.125
+  offset: {x: -10, y: 2, z: -10}
+  xRightLimit: 0
+  xLeftLimit: 0
+  yUpLimit: 0
+  yDownLimit: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1820,6 +1838,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
