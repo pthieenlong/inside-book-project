@@ -5,13 +5,14 @@ using Spine.Unity;
 
 public class LilyAnimControl : MonoBehaviour
 {
-    public SkeletonAnimation SAnim;
-    string currentState = LilyState.Idle;
+    public SkeletonAnimation SAnim; string currentState = LilyState.Idle;
+    public bool isJumping = false;
     float baseDirection = 1;
 
     void Start()
     {
         baseDirection = SAnim.transform.localScale.x;
+        SetAnimation(LilyState.Idle_Empty_Hand);
     }
     public void SetAnimation(string animName, bool isLoop = true, float timeScale = 1)
     {
@@ -26,12 +27,17 @@ public class LilyAnimControl : MonoBehaviour
     {
         SAnim.transform.localScale = SAnim.transform.localScale.V3SetX(baseDirection * (isLeft ? -1 : 1));
     }
+
 }
 
 public class LilyState
 {
     public const string Idle = "tho";
-    public const string Idle_Empty_Hand = "tho_ban dau";
+    public const string Idle_Empty_Hand = "tho_ ban dau";
     public const string Move = "dichuyen_cam";
     public const string Move_Empty_Hand = "di chuyen2";
+    public const string Jump_Start = "animation nhay";
+    public const string Jumping = "anmation nhay 2";
+    public const string Falling = "animation nhay3";
+    public const string Fall_IsGrounded = "";
 }

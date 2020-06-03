@@ -24,40 +24,54 @@ public class CharacterMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            Debug.Log("a");
             moveDirection = -1;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            Debug.Log("d");
             moveDirection = 1;
         }
 
         if (moveDirection > 0)      // Right
         {
             moveController.MovingRight();
-            AnimLily.SetAnimation(LilyState.Move);
+            if (!AnimLily.isJumping)
+                AnimLily.SetAnimation(LilyState.Move);
             AnimLily.SetDirection(false);
         }
         else if (moveDirection < 0) // Left
         {
             moveController.MovingLeft();
-            AnimLily.SetAnimation(LilyState.Move, true);
+            if (!AnimLily.isJumping)
+                AnimLily.SetAnimation(LilyState.Move, true);
             AnimLily.SetDirection(true);
         }
         else
         {
-            AnimLily.SetAnimation(LilyState.Idle);
+            if (!AnimLily.isJumping)
+                AnimLily.SetAnimation(LilyState.Idle);
         }
         #endregion Horizontal
 
         #region Vertical
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {
-            moveController.Jump();
+            // moveController.Jump();
+            AnimLily.isJumping = true;
+            StartCoroutine(JumpRoutine());
         }
         #endregion Vertical
+    }
+
+    float jumpTimeScale = 1;
+    IEnumerator JumpRoutine()
+    {
+        jumpTimeScale = 3;
+        AnimLily.SetAnimation(LilyState.Jump_Start, false, jumpTimeScale);
+        yield return new WaitForSeconds(0.467f / jumpTimeScale);
+        AnimLily.SetAnimation(LilyState.Jumping, false);
+        moveController.Jump();
+        //TODO state setting here
     }
 }
 public class SaveKey

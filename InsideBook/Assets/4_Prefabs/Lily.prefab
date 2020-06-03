@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9107184476453827735}
   - component: {fileID: 489444741}
   - component: {fileID: 489444742}
+  - component: {fileID: 7690404519469660935}
   m_Layer: 0
   m_Name: Lily
   m_TagString: Untagged
@@ -141,7 +142,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 0
@@ -215,3 +216,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SAnim: {fileID: 9107184476453827731}
+--- !u!114 &7690404519469660935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107184476453827728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c7f3d36a1810a4c9797d5697778951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveController: {fileID: 9107184476453827735}
+  AnimLily: {fileID: 489444742}
