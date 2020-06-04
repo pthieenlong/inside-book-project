@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Lily_characters_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 28195ba17d25ac64cb2d539187c5dcc7, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 1b7453013aac0d94ab1ed8eb6f778373, type: 2}
+  - {fileID: 2100000, guid: 2097e490bb14c8345a13b1d169a472e4, type: 2}
+  - {fileID: 2100000, guid: 0385d23e2712a9f43a692e099cff3b05, type: 2}
+  - {fileID: 2100000, guid: 86587907a42fc0d46baf296010de676c, type: 2}
+  - {fileID: 2100000, guid: bf05aee1f4a539a4c8b12e36cecdcd9c, type: 2}
+  - {fileID: 2100000, guid: 6981a69d10f3d1e45add6afee4068fac, type: 2}
+  - {fileID: 2100000, guid: 75d48a4bf8d7eef49837d0ae00b9b6dd, type: 2}

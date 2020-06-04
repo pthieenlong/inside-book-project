@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
 {
     public MoveObject moveController;
     public LilyAnimControl AnimLily;
+    public LayerMask LayerGround;
 
     float moveDirection = 0;
     void Update()
@@ -35,20 +36,20 @@ public class CharacterMovement : MonoBehaviour
         if (moveDirection > 0)      // Right
         {
             moveController.MovingRight();
-            if (!AnimLily.isJumping)
+            if (!AnimLily.isJumping && IsGrounded())
                 AnimLily.SetAnimation(LilyState.Move);
             AnimLily.SetDirection(false);
         }
         else if (moveDirection < 0) // Left
         {
             moveController.MovingLeft();
-            if (!AnimLily.isJumping)
+            if (!AnimLily.isJumping && IsGrounded())
                 AnimLily.SetAnimation(LilyState.Move, true);
             AnimLily.SetDirection(true);
         }
         else
         {
-            if (!AnimLily.isJumping)
+            if (!AnimLily.isJumping && IsGrounded())
                 AnimLily.SetAnimation(LilyState.Idle);
         }
         #endregion Horizontal
@@ -56,22 +57,64 @@ public class CharacterMovement : MonoBehaviour
         #region Vertical
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {
-            // moveController.Jump();
-            AnimLily.isJumping = true;
-            StartCoroutine(JumpRoutine());
+            if (IsGrounded() && !AnimLily.isJumping)
+            {
+                AnimLily.isJumping = true;
+                StartCoroutine(JumpRoutine());
+            }
         }
+
+        if (!IsGrounded())
+        {
+            if (moveController._Object.velocity.y < 0)
+            {
+                AnimLily.SetAnimation(LilyState.Falling, false);
+            }
+        }
+        // else
+        // {
+        //     if (AnimLily.currentState == LilyState.Falling)
+        //     {
+        //         AnimLily.SetAnimation(LilyState.Fall_IsGrounded, false, 3);
+        //     }
+        // }
         #endregion Vertical
     }
 
-    float jumpTimeScale = 1;
+    public float raycastRange = 0.3f;
+    RaycastHit2D hitObject;
+    bool IsGrounded()
+    {
+
+        hitObject = Physics2D.Raycast(this.transform.position, Vector2.down, raycastRange, (int)LayerGround);
+        if (hitObject)
+        {
+            if (hitObject.transform.CompareTag("Ground"))
+            {
+                if (AnimLily.currentState == LilyState.Falling
+                 || AnimLily.currentState == LilyState.Jumping
+                 && moveController._Object.velocity.y < 0)
+                    AnimLily.isJumping = false;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public float jumpTimeScale = 3;
     IEnumerator JumpRoutine()
     {
-        jumpTimeScale = 3;
         AnimLily.SetAnimation(LilyState.Jump_Start, false, jumpTimeScale);
         yield return new WaitForSeconds(0.467f / jumpTimeScale);
         AnimLily.SetAnimation(LilyState.Jumping, false);
         moveController.Jump();
         //TODO state setting here
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(this.transform.position, Vector2.down * raycastRange);
     }
 }
 public class SaveKey
