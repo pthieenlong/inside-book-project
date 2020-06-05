@@ -13,6 +13,7 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         PlayerCharacterMovement();
+        //Debug.Log(IsGrounded());
     }
     public void PlayerCharacterMovement()
     {
@@ -32,6 +33,13 @@ public class CharacterMovement : MonoBehaviour
         {
             moveDirection = 1;
         }
+        
+        // if(Input.GetKeyUp(KeyCode.A) && Input.GetKeyDown(KeyCode.A)){
+        //     moveDirection = -2;
+        // }
+        // if(Input.GetKeyUp(KeyCode.D) && Input.GetKeyDown(KeyCode.D)){
+        //     moveDirection = 2;
+        // }
 
         if (moveDirection > 0)      // Right
         {
@@ -52,6 +60,7 @@ public class CharacterMovement : MonoBehaviour
             if (!AnimLily.isJumping && IsGrounded())
                 AnimLily.SetAnimation(LilyState.Idle);
         }
+        
         #endregion Horizontal
 
         #region Vertical
@@ -79,6 +88,14 @@ public class CharacterMovement : MonoBehaviour
         //     }
         // }
         #endregion Vertical
+
+        #region Attack
+        //Dash
+        if(Input.GetKeyDown(KeyCode.J)){
+            Debug.Log("J");
+            moveController.StartDash();
+        }
+        #endregion Attack
     }
 
     public float raycastRange = 0.3f;

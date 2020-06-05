@@ -7,12 +7,21 @@ public class MoveObject : MonoBehaviour
     public Rigidbody2D _Object;
     public float speed = 20f;
     public float jumpForce = 10f;
+    public float dashForce = 30f;
+    public float gravityScale = 5f;
+    public Vector2 dashVector;
+    bool isDashing = false;
+    float moveDirection;
 
     void Start()
     {
         _Object.GetComponent<Rigidbody>();
     }
-
+    void Update(){
+        if(isDashing){
+            Dashing();
+        }
+    }
     public void StopMoving()
     {
         _Object.velocity = _Object.velocity.V2SetX(0);
@@ -22,20 +31,41 @@ public class MoveObject : MonoBehaviour
     {
         // _Object.velocity = Vector2.right * speed * Time.deltaTime;
         _Object.velocity = _Object.velocity.V2SetX(Vector2.right.x * speed);
+        moveDirection = 1;
     }
     public void MovingLeft()
     {
         // _Object.velocity = Vector2.left * speed * Time.deltaTime;
         _Object.velocity = _Object.velocity.V2SetX(Vector2.left.x * speed);
+        moveDirection = -1;
     }
 
     public void Jump()
     {
         _Object.velocity = _Object.velocity.V2SetY(jumpForce);
     }
+    public void StartDash(){
+        isDashing = true;
+        _Object.gravityScale = 0;
+        _Object.velocity = dashVector;
+        _Object.velocity = _Object.velocity.V2SetX(_Object.velocity.x * moveDirection);
+    }
+    public void Dashing(){
+        _Object.velocity = Vector2.Lerp(_Object.velocity, Vector2.zero, 2f);
+        if(_Object.velocity.magnitude < 0.1){
+            EndDash();
+        }
+    }
+    public void EndDash(){
+        isDashing = false;
+        _Object.gravityScale = gravityScale;
+    }
+    
+
 
     void OnDrawGizmos()
     {
         Gizmos.DrawRay(_Object.transform.position, _Object.velocity);
     }
+    
 }
