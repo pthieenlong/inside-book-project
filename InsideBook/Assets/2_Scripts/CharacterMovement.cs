@@ -100,7 +100,6 @@ public class CharacterMovement : MonoBehaviour
         }
         return false;
     }
-
     public float jumpTimeScale = 3;
     IEnumerator JumpRoutine()
     {
@@ -116,12 +115,6 @@ public class CharacterMovement : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawRay(this.transform.position, Vector2.down * raycastRange);
     }
-}
-public class SaveKey
-{
-    public const String Left = "LeftTrigger";
-    public const String Right = "RightTrigger";
-
 }
 
 
