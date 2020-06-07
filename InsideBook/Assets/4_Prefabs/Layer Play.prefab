@@ -1166,10 +1166,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7219479005920704694}
     m_Modifications:
+    - target: {fileID: 489444739, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.3000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 489444739, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+      propertyPath: m_Offset.y
+      value: 4.420362
+      objectReference: {fileID: 0}
+    - target: {fileID: 489444739, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+      propertyPath: m_Size.x
+      value: 3.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 489444739, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+      propertyPath: m_Size.y
+      value: 10.840726
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051638026092470088, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9107184476453827728, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
         type: 3}
       propertyPath: m_Name
       value: Lily
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107184476453827728, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9107184476453827732, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
         type: 3}
