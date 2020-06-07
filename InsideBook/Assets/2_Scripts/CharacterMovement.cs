@@ -12,10 +12,10 @@ public class CharacterMovement : MonoBehaviour
     float moveDirection = 0;
     void Update()
     {
-        PlayerCharacterMovement();
+        PlayerCharacterControl();
         //Debug.Log(IsGrounded());
     }
-    public void PlayerCharacterMovement()
+    public void PlayerCharacterControl()
     {
         #region Horizontal
 

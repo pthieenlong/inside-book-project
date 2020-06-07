@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: b3f8909a8f7c5ee458ec6ec75d91e93b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3299805278835589836
+    second: water47_sprite_0
+  - first:
+      213: 5366672146395243741
+    second: water47_sprite_1
+  - first:
+      213: -724541995572541724
+    second: water47_sprite_2
+  - first:
+      213: -4933958479991417586
+    second: water47_sprite_3
+  - first:
+      213: 654478202058231540
+    second: water47_sprite_4
+  - first:
+      213: 6081780998016157679
+    second: water47_sprite_5
+  - first:
+      213: -4023685587223205830
+    second: water47_sprite_6
+  - first:
+      213: 6357419404104332234
+    second: water47_sprite_7
+  - first:
+      213: 7258167489666148264
+    second: water47_sprite_8
+  - first:
+      213: 5375737850962496804
+    second: water47_sprite_9
+  - first:
+      213: 1606158391065649190
+    second: water47_sprite_10
+  - first:
+      213: -763180525629791361
+    second: water47_sprite_11
+  - first:
+      213: 5112447822400041806
+    second: water47_sprite_12
+  - first:
+      213: 9202852512185412632
+    second: water47_sprite_13
+  - first:
+      213: -4467365296719936741
+    second: water47_sprite_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +116,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: water47_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 929.3334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dbb0ff49cb432d0800000000000000
+      internalID: -3299805278835589836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 929.3334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd42fdf12ef3a7a40800000000000000
+      internalID: 5366672146395243741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 929.3334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6cb01d4e8e1f5f0800000000000000
+      internalID: -724541995572541724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 929.3334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05d59757ee078bb0800000000000000
+      internalID: -4933958479991417586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 929.3334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fecaea057c251900800000000000000
+      internalID: 654478202058231540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 465.33334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe749745893d66450800000000000000
+      internalID: 6081780998016157679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 465.33334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38a3bdd64ff828c0800000000000000
+      internalID: -4023685587223205830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 465.33334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac370d5d3471a3850800000000000000
+      internalID: 6357419404104332234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 465.33334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7e6dd50e03ab460800000000000000
+      internalID: 7258167489666148264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 465.33334
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42dcd34f7157a9a40800000000000000
+      internalID: 5375737850962496804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333435
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6202b700c883a4610800000000000000
+      internalID: 1606158391065649190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1.3333435
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73275efa53a865f0800000000000000
+      internalID: -763180525629791361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1.3333435
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43bfd2253013f640800000000000000
+      internalID: 5112447822400041806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1.3333435
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c6f1dd99917bf70800000000000000
+      internalID: 9202852512185412632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1.3333435
+        width: 458.2
+        height: 464.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13c9178eeab002c0800000000000000
+      internalID: -4467365296719936741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

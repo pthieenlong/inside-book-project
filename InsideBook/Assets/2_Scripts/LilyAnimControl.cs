@@ -13,7 +13,7 @@ public class LilyAnimControl : MonoBehaviour
     void Start()
     {
         baseDirection = SAnim.transform.localScale.x;
-        // SetAnimation(LilyState.Idle_Empty_Hand);
+        SetAnimation(LilyState.Idle, true);
     }
     public void SetAnimation(string animName, bool isLoop = true, float timeScale = 1)
     {

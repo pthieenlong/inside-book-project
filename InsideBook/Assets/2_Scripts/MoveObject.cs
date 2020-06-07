@@ -8,15 +8,16 @@ public class MoveObject : MonoBehaviour
     public float speed = 20f;
     public float jumpForce = 10f;
     public float dashForce = 30f;
-    public float gravityScale = 5f;
     public Vector2 dashVector;
     bool isDashing = false;
-    float moveDirection;
+    float moveDirection = 1;
+    float gravityScale = 5f;
 
     void Start()
     {
         _Object.GetComponent<Rigidbody>();
     }
+    
     void Update(){
         if(isDashing){
             Dashing();
@@ -46,13 +47,14 @@ public class MoveObject : MonoBehaviour
     }
     public void StartDash(){
         isDashing = true;
+        gravityScale = _Object.gravityScale;
         _Object.gravityScale = 0;
-        _Object.velocity = dashVector;
-        _Object.velocity = _Object.velocity.V2SetX(_Object.velocity.x * moveDirection);
+        // _Object.velocity = dashVector;
+        _Object.velocity = _Object.velocity.V2SetX(dashForce * moveDirection);
     }
     public void Dashing(){
-        _Object.velocity = Vector2.Lerp(_Object.velocity, Vector2.zero, 2f);
-        if(_Object.velocity.magnitude < 0.1){
+        _Object.velocity = Vector2.Lerp(_Object.velocity, Vector2.zero, 0.25f);
+        if(Mathf.Abs(_Object.velocity.x) < 1){
             EndDash();
         }
     }

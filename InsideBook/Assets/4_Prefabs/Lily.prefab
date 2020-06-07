@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 9107184476453827735}
   - component: {fileID: 489444741}
   - component: {fileID: 489444742}
-  - component: {fileID: 7051638026092470088}
   m_Layer: 8
   m_Name: Lily
   m_TagString: Untagged
@@ -161,8 +160,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3, y: 6}
-  m_Size: {x: 9, y: 14}
+  m_Offset: {x: 0, y: 4.273005}
+  m_Size: {x: 2.9235394, y: 10.546012}
   m_Direction: 0
 --- !u!114 &9107184476453827735
 MonoBehaviour:
@@ -179,6 +178,9 @@ MonoBehaviour:
   _Object: {fileID: 9107184476453827737}
   speed: 5
   jumpForce: 10
+  dashForce: 30
+  gravityScale: 5
+  dashVector: {x: 0, y: 0}
 --- !u!114 &489444741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,22 +215,3 @@ MonoBehaviour:
   SAnim: {fileID: 9107184476453827731}
   currentState: tho
   isJumping: 0
---- !u!95 &7051638026092470088
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9107184476453827728}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7388fa30c6fff4100856e1f4d7125673, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
