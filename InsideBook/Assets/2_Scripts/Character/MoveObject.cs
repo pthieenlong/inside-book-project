@@ -13,7 +13,7 @@ public class MoveObject : MonoBehaviour
     public float jumpForce = 10f;
 
     [Header("Dashing Fields")]
-    // public Vector2 dashVector;
+    public Vector2 dashVector;
     public Animator DashFX;
     public Animator SplashFx;
     public float dashForce = 30f;
@@ -75,14 +75,15 @@ public class MoveObject : MonoBehaviour
         gravityScale = _Object.gravityScale;
         _Object.gravityScale = 0;
         currentScale = ModelObj.transform.parent.localScale.z;
-        _Object.velocity = Vector3.zero;
+        _Object.velocity = Vector3.up * 5f;
         canMove = false;
         DashFX.Play("StartDash");
 
         ModelObj.transform.parent.DOScale(Vector3.one * currentScale * 0.25f, scaleTime).OnComplete(() =>
         {
             isDashing = true;
-            _Object.velocity = _Object.velocity.V2SetX(dashForce * moveDirection);
+            // _Object.velocity = _Object.velocity.V2SetX(dashForce * moveDirection);
+            _Object.velocity = (dashVector * dashForce);
             PlaySplashFX();
             // DashFX.gameObject.SetActive(false);
         });

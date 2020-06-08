@@ -5,6 +5,8 @@ using UnityEngine;
 public class GamePlaySetting
 {
     public static int BaseDashCount = 1;
+    public static bool IsDead = false;
+    public static Checkpoint CurrentCheckPoint;
 
     #region Save Game
     public static void SaveInt(string key, int val)

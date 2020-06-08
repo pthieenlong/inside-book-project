@@ -9,11 +9,11 @@ public class CharacterMovement : MonoBehaviour
     public MoveObject moveController;
     public LilyAnimControl AnimLily;
     public LayerMask LayerGround;
-
     float moveDirection = 0;
+
     void Update()
     {
-        if (moveController.canMove)
+        if (moveController.canMove && !GamePlaySetting.IsDead)
             PlayerCharacterControl();
     }
     public void PlayerCharacterControl()
@@ -35,12 +35,7 @@ public class CharacterMovement : MonoBehaviour
             moveDirection = 1;
         }
 
-        // if(Input.GetKeyUp(KeyCode.A) && Input.GetKeyDown(KeyCode.A)){
-        //     moveDirection = -2;
-        // }
-        // if(Input.GetKeyUp(KeyCode.D) && Input.GetKeyDown(KeyCode.D)){
-        //     moveDirection = 2;
-        // }
+        moveController.dashVector.x = moveController._Object.transform.localScale.x;
 
         if (moveDirection > 0)      // Right
         {
@@ -63,6 +58,17 @@ public class CharacterMovement : MonoBehaviour
         #endregion Horizontal
 
         #region Vertical
+        if (Input.GetKey(KeyCode.W))
+        {
+            moveController.dashVector.y = 1;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            moveController.dashVector.y = -1;
+        }
+        else
+            moveController.dashVector.y = 0;
+
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {
             if (IsGrounded() && !AnimLily.isJumping)
@@ -129,7 +135,31 @@ public class CharacterMovement : MonoBehaviour
 
     public void OnDead()
     {
+        canControl = false;
+        GamePlaySetting.IsDead = true;
+        moveController._Object.isKinematic = true;
+        moveController._Object.velocity = Vector3.zero;
+        AnimLily.SetAnimation(LilyState.Dead, false);
+        Invoke("OnReSpawn", 2);
+    }
 
+    public void OnReSpawn()
+    {
+        canControl = true;
+        GamePlaySetting.IsDead = false;
+        moveController._Object.isKinematic = false;
+        moveDirection = 0;
+        this.transform.position = GamePlaySetting.CurrentCheckPoint.transform.position;
+        CameraSetting.Instance.SwitchToNormalState(5f);
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.CompareTag("Dead"))
+        {
+            OnDead();
+        }
     }
 
     void OnDrawGizmos()
