@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GamePlaySetting
 {
+    public static int BaseDashCount = 1;
 
     #region Save Game
     public static void SaveInt(string key, int val)

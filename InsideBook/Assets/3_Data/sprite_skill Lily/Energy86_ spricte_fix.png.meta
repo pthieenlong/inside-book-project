@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: 44c7bac61bcaac94baad9ab604f3ba4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -73537547582354158
+    second: Energy86_ spricte_fix_0
+  - first:
+      213: -5271246047649316213
+    second: Energy86_ spricte_fix_1
+  - first:
+      213: -3899337879051233270
+    second: Energy86_ spricte_fix_2
+  - first:
+      213: 1760803593109061404
+    second: Energy86_ spricte_fix_3
+  - first:
+      213: 198950977390364196
+    second: Energy86_ spricte_fix_4
+  - first:
+      213: -1773746861622788772
+    second: Energy86_ spricte_fix_5
+  - first:
+      213: -4636653313760269656
+    second: Energy86_ spricte_fix_6
+  - first:
+      213: 5094112977905427112
+    second: Energy86_ spricte_fix_7
+  - first:
+      213: 6338454230326244557
+    second: Energy86_ spricte_fix_8
+  - first:
+      213: -6264216280581599892
+    second: Energy86_ spricte_fix_9
+  - first:
+      213: 7433385383509870702
+    second: Energy86_ spricte_fix_10
+  - first:
+      213: 7906997353840143920
+    second: Energy86_ spricte_fix_11
+  - first:
+      213: -7073767654903057318
+    second: Energy86_ spricte_fix_12
+  - first:
+      213: 3914901138852086217
+    second: Energy86_ spricte_fix_13
+  - first:
+      213: 3513852193018486987
+    second: Energy86_ spricte_fix_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 951
+        width: 372
+        height: 404
+      alignment: 9
+      pivot: {x: 0.5538749, y: 0.4912457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d43b67dfdbafef0800000000000000
+      internalID: -73537547582354158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 940
+        width: 384
+        height: 399
+      alignment: 9
+      pivot: {x: 0.52433425, y: 0.49839106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b824e2ed5a5c8d6b0800000000000000
+      internalID: -5271246047649316213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_2
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 951
+        width: 363
+        height: 379
+      alignment: 9
+      pivot: {x: 0.54757684, y: 0.49188247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a081debcbd4c2e9c0800000000000000
+      internalID: -3899337879051233270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_3
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 949
+        width: 366
+        height: 371
+      alignment: 9
+      pivot: {x: 0.5390598, y: 0.507389}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f3f7ee981af6810800000000000000
+      internalID: 1760803593109061404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_4
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 951
+        width: 310
+        height: 361
+      alignment: 9
+      pivot: {x: 0.52025187, y: 0.52086896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426c11f1cd0d2c200800000000000000
+      internalID: 198950977390364196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 490
+        width: 315
+        height: 355
+      alignment: 9
+      pivot: {x: 0.55479413, y: 0.5331751}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d728780a26267e0800000000000000
+      internalID: -1773746861622788772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_6
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 490
+        width: 315
+        height: 345
+      alignment: 9
+      pivot: {x: 0.54330647, y: 0.5378676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa6eae806c47afb0800000000000000
+      internalID: -4636653313760269656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_7
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 497
+        width: 305
+        height: 328
+      alignment: 9
+      pivot: {x: 0.51670843, y: 0.5479723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2a2cd73cce1b640800000000000000
+      internalID: 5094112977905427112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_8
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 513
+        width: 290
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5061944, y: 0.55016905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4faa73a86b6f750800000000000000
+      internalID: 6338454230326244557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_9
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 526
+        width: 273
+        height: 272
+      alignment: 9
+      pivot: {x: 0.49312115, y: 0.5650018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d07b76b780119a0800000000000000
+      internalID: -6264216280581599892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 58
+        width: 277
+        height: 274
+      alignment: 9
+      pivot: {x: 0.5091843, y: 0.5740375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68cfae5f90b82760800000000000000
+      internalID: 7433385383509870702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 62
+        width: 270
+        height: 267
+      alignment: 9
+      pivot: {x: 0.5094225, y: 0.5905193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e6893433c4bbd60800000000000000
+      internalID: 7906997353840143920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_12
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 139
+        width: 158
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54fad9dbcde4dd90800000000000000
+      internalID: -7073767654903057318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_13
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 137
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c10d0008d5845630800000000000000
+      internalID: 3914901138852086217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Energy86_ spricte_fix_14
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 135
+        width: 166
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0281ec3f5b3c030800000000000000
+      internalID: 3513852193018486987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

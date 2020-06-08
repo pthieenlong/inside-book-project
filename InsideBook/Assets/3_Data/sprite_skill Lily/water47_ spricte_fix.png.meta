@@ -1,0 +1,1226 @@
+fileFormatVersion: 2
+guid: 3e3cb9bd9a90d3f4e850694204ed9054
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3478063671349816392
+    second: water47_ spricte_fix_0
+  - first:
+      213: 2782014356439817056
+    second: water47_ spricte_fix_1
+  - first:
+      213: -8351202941949635735
+    second: water47_ spricte_fix_2
+  - first:
+      213: -6953986606414420530
+    second: water47_ spricte_fix_3
+  - first:
+      213: -6884363528457652727
+    second: water47_ spricte_fix_4
+  - first:
+      213: 1663827966040876410
+    second: water47_ spricte_fix_5
+  - first:
+      213: 279265342296177322
+    second: water47_ spricte_fix_6
+  - first:
+      213: 4682796251333504256
+    second: water47_ spricte_fix_7
+  - first:
+      213: 5050424766030450719
+    second: water47_ spricte_fix_8
+  - first:
+      213: -969159716717592273
+    second: water47_ spricte_fix_9
+  - first:
+      213: 5112739982288359456
+    second: water47_ spricte_fix_10
+  - first:
+      213: -184448534914545656
+    second: water47_ spricte_fix_11
+  - first:
+      213: -8624633527694863126
+    second: water47_ spricte_fix_12
+  - first:
+      213: -8428171622701361249
+    second: water47_ spricte_fix_13
+  - first:
+      213: -6096042058647032074
+    second: water47_ spricte_fix_14
+  - first:
+      213: -9162222823833566948
+    second: water47_ spricte_fix_15
+  - first:
+      213: 935837656071249831
+    second: water47_ spricte_fix_16
+  - first:
+      213: 1020183846152658696
+    second: water47_ spricte_fix_17
+  - first:
+      213: 4990090327931467560
+    second: water47_ spricte_fix_18
+  - first:
+      213: -6074285034528887781
+    second: water47_ spricte_fix_19
+  - first:
+      213: -8231913241565624261
+    second: water47_ spricte_fix_20
+  - first:
+      213: 7302142069691788140
+    second: water47_ spricte_fix_21
+  - first:
+      213: 7408809785287358930
+    second: water47_ spricte_fix_22
+  - first:
+      213: -6223669718694884056
+    second: water47_ spricte_fix_23
+  - first:
+      213: 8395824354686391447
+    second: water47_ spricte_fix_24
+  - first:
+      213: 6553427168688693368
+    second: water47_ spricte_fix_25
+  - first:
+      213: 1308493817559696818
+    second: water47_ spricte_fix_26
+  - first:
+      213: -8053048826591047191
+    second: water47_ spricte_fix_27
+  - first:
+      213: 7506946255350637843
+    second: water47_ spricte_fix_28
+  - first:
+      213: -201023552951167298
+    second: water47_ spricte_fix_29
+  - first:
+      213: -1045545677761020897
+    second: water47_ spricte_fix_30
+  - first:
+      213: 8951011110444668780
+    second: water47_ spricte_fix_31
+  - first:
+      213: 2973098384012443365
+    second: water47_ spricte_fix_32
+  - first:
+      213: -3870626296755936372
+    second: water47_ spricte_fix_33
+  - first:
+      213: -5179419997246290208
+    second: water47_ spricte_fix_34
+  - first:
+      213: -118890842868447328
+    second: water47_ spricte_fix_35
+  - first:
+      213: 2427675612968172956
+    second: water47_ spricte_fix_36
+  - first:
+      213: -8162230789900646348
+    second: water47_ spricte_fix_37
+  - first:
+      213: -258525711160499357
+    second: water47_ spricte_fix_38
+  - first:
+      213: -3423404827638960710
+    second: water47_ spricte_fix_39
+  - first:
+      213: 1425259578686619302
+    second: water47_ spricte_fix_40
+  - first:
+      213: -437742789137704497
+    second: water47_ spricte_fix_41
+  - first:
+      213: -8686781257761667322
+    second: water47_ spricte_fix_42
+  - first:
+      213: 1260400442064459464
+    second: water47_ spricte_fix_43
+  - first:
+      213: -4709900311788483772
+    second: water47_ spricte_fix_44
+  - first:
+      213: -1777084443310928191
+    second: water47_ spricte_fix_45
+  - first:
+      213: -9168330640863497426
+    second: water47_ spricte_fix_46
+  - first:
+      213: 3107065424235643631
+    second: water47_ spricte_fix_47
+  - first:
+      213: -7228480947819126523
+    second: water47_ spricte_fix_48
+  - first:
+      213: 1448672237399169312
+    second: water47_ spricte_fix_49
+  - first:
+      213: 7360122482175033944
+    second: water47_ spricte_fix_50
+  - first:
+      213: 4352311560737815398
+    second: water47_ spricte_fix_51
+  - first:
+      213: 4827338612062280748
+    second: water47_ spricte_fix_52
+  - first:
+      213: -8331280805905405145
+    second: water47_ spricte_fix_53
+  - first:
+      213: -8389602322581221571
+    second: water47_ spricte_fix_54
+  - first:
+      213: 2688320962293278573
+    second: water47_ spricte_fix_55
+  - first:
+      213: 8307731787098224291
+    second: water47_ spricte_fix_56
+  - first:
+      213: -4034031655162237577
+    second: water47_ spricte_fix_57
+  - first:
+      213: 869836255044479634
+    second: water47_ spricte_fix_58
+  - first:
+      213: -6073401247384144043
+    second: water47_ spricte_fix_59
+  - first:
+      213: 4378324574952915556
+    second: water47_ spricte_fix_60
+  - first:
+      213: 5252778495669052594
+    second: water47_ spricte_fix_61
+  - first:
+      213: 8847269976243097800
+    second: water47_ spricte_fix_62
+  - first:
+      213: 1530996378101792739
+    second: water47_ spricte_fix_63
+  - first:
+      213: -3043724682845763641
+    second: water47_ spricte_fix_64
+  - first:
+      213: 4562999663210421870
+    second: water47_ spricte_fix_65
+  - first:
+      213: -6351547914351642646
+    second: water47_ spricte_fix_66
+  - first:
+      213: -6798586983982566354
+    second: water47_ spricte_fix_67
+  - first:
+      213: -740221632232285691
+    second: water47_ spricte_fix_68
+  - first:
+      213: 202958766078830426
+    second: water47_ spricte_fix_69
+  - first:
+      213: 2350482035039232755
+    second: water47_ spricte_fix_70
+  - first:
+      213: 7225865000959651585
+    second: water47_ spricte_fix_71
+  - first:
+      213: 1375900831998756340
+    second: water47_ spricte_fix_72
+  - first:
+      213: -5814616618868276516
+    second: water47_ spricte_fix_73
+  - first:
+      213: -7644419840582500321
+    second: water47_ spricte_fix_74
+  - first:
+      213: 7820259446097936718
+    second: water47_ spricte_fix_75
+  - first:
+      213: -2863741203972132255
+    second: water47_ spricte_fix_76
+  - first:
+      213: -5379604828206150735
+    second: water47_ spricte_fix_77
+  - first:
+      213: -7828343664617618509
+    second: water47_ spricte_fix_78
+  - first:
+      213: -5082276393455365970
+    second: water47_ spricte_fix_79
+  - first:
+      213: -3995307256401539001
+    second: water47_ spricte_fix_80
+  - first:
+      213: 6613712792360750385
+    second: water47_ spricte_fix_81
+  - first:
+      213: -4093891201570391803
+    second: water47_ spricte_fix_82
+  - first:
+      213: -7661023687067897833
+    second: water47_ spricte_fix_83
+  - first:
+      213: -3770463306485683370
+    second: water47_ spricte_fix_84
+  - first:
+      213: -7624269987561788253
+    second: water47_ spricte_fix_85
+  - first:
+      213: 6908133732865885495
+    second: water47_ spricte_fix_86
+  - first:
+      213: 5797058542052753522
+    second: water47_ spricte_fix_87
+  - first:
+      213: 6430089333016577145
+    second: water47_ spricte_fix_88
+  - first:
+      213: -9192775864928400734
+    second: water47_ spricte_fix_89
+  - first:
+      213: -2976120999093448339
+    second: water47_ spricte_fix_90
+  - first:
+      213: 4349320356624927290
+    second: water47_ spricte_fix_91
+  - first:
+      213: -1984770854160778558
+    second: water47_ spricte_fix_92
+  - first:
+      213: -5717381214567609120
+    second: water47_ spricte_fix_93
+  - first:
+      213: -8321575645009177712
+    second: water47_ spricte_fix_94
+  - first:
+      213: 8635177950611442563
+    second: water47_ spricte_fix_95
+  - first:
+      213: -8063213904658934287
+    second: water47_ spricte_fix_96
+  - first:
+      213: -333462961825049835
+    second: water47_ spricte_fix_97
+  - first:
+      213: 2019994574601386718
+    second: water47_ spricte_fix_98
+  - first:
+      213: 7657895343622397609
+    second: water47_ spricte_fix_99
+  - first:
+      213: -4168350049701882984
+    second: water47_ spricte_fix_100
+  - first:
+      213: -66951699977645636
+    second: water47_ spricte_fix_101
+  - first:
+      213: 1704454168460304607
+    second: water47_ spricte_fix_102
+  - first:
+      213: 8803058444913190517
+    second: water47_ spricte_fix_103
+  - first:
+      213: 2463949949857019950
+    second: water47_ spricte_fix_104
+  - first:
+      213: 4617933757791868818
+    second: water47_ spricte_fix_105
+  - first:
+      213: -1827195019335459437
+    second: water47_ spricte_fix_106
+  - first:
+      213: -7943810551494979758
+    second: water47_ spricte_fix_107
+  - first:
+      213: 4177941316847607965
+    second: water47_ spricte_fix_108
+  - first:
+      213: 7294263023780410018
+    second: water47_ spricte_fix_109
+  - first:
+      213: 7808057870049684312
+    second: water47_ spricte_fix_110
+  - first:
+      213: 1378925596939813011
+    second: water47_ spricte_fix_111
+  - first:
+      213: -7390689198349521336
+    second: water47_ spricte_fix_112
+  - first:
+      213: -5799668575362914023
+    second: water47_ spricte_fix_113
+  - first:
+      213: -4762043217250653572
+    second: water47_ spricte_fix_114
+  - first:
+      213: 8921480049094770971
+    second: water47_ spricte_fix_115
+  - first:
+      213: 3127436603436153839
+    second: water47_ spricte_fix_116
+  - first:
+      213: -7027393874604322192
+    second: water47_ spricte_fix_117
+  - first:
+      213: -4319731836766651042
+    second: water47_ spricte_fix_118
+  - first:
+      213: -6216950200948069748
+    second: water47_ spricte_fix_119
+  - first:
+      213: 367210780687707924
+    second: water47_ spricte_fix_120
+  - first:
+      213: 6517894968642306461
+    second: water47_ spricte_fix_121
+  - first:
+      213: -3624202051231324456
+    second: water47_ spricte_fix_122
+  - first:
+      213: -4964402308273295285
+    second: water47_ spricte_fix_123
+  - first:
+      213: -4546897720303721591
+    second: water47_ spricte_fix_124
+  - first:
+      213: -2489894204700563442
+    second: water47_ spricte_fix_125
+  - first:
+      213: 3580324868457377190
+    second: water47_ spricte_fix_126
+  - first:
+      213: -8658269373049567889
+    second: water47_ spricte_fix_127
+  - first:
+      213: 7097702853594322958
+    second: water47_ spricte_fix_128
+  - first:
+      213: 2663105115291567521
+    second: water47_ spricte_fix_129
+  - first:
+      213: 3333701356469510493
+    second: water47_ spricte_fix_130
+  - first:
+      213: -6928974822875606094
+    second: water47_ spricte_fix_131
+  - first:
+      213: 8300149499886192648
+    second: water47_ spricte_fix_132
+  - first:
+      213: -105204839504604248
+    second: water47_ spricte_fix_133
+  - first:
+      213: 6546475533270611532
+    second: water47_ spricte_fix_134
+  - first:
+      213: 1468588163653020985
+    second: water47_ spricte_fix_135
+  - first:
+      213: -2184385471241632366
+    second: water47_ spricte_fix_136
+  - first:
+      213: 6038851291990658608
+    second: water47_ spricte_fix_137
+  - first:
+      213: 6799567882077561757
+    second: water47_ spricte_fix_138
+  - first:
+      213: -1594445725910058880
+    second: water47_ spricte_fix_139
+  - first:
+      213: 7904393054451571347
+    second: water47_ spricte_fix_140
+  - first:
+      213: 952052171483638124
+    second: water47_ spricte_fix_141
+  - first:
+      213: 966161213551497923
+    second: water47_ spricte_fix_142
+  - first:
+      213: 5424533853080379841
+    second: water47_ spricte_fix_143
+  - first:
+      213: 8263038281304755894
+    second: water47_ spricte_fix_144
+  - first:
+      213: -1888733201876245464
+    second: water47_ spricte_fix_145
+  - first:
+      213: -2129913321557458761
+    second: water47_ spricte_fix_146
+  - first:
+      213: 1183457658537451415
+    second: water47_ spricte_fix_147
+  - first:
+      213: -7315319489010814248
+    second: water47_ spricte_fix_148
+  - first:
+      213: 8677733874051926219
+    second: water47_ spricte_fix_149
+  - first:
+      213: -2668328469154536465
+    second: water47_ spricte_fix_150
+  - first:
+      213: 7450193343596360050
+    second: water47_ spricte_fix_151
+  - first:
+      213: 8227152100682264752
+    second: water47_ spricte_fix_152
+  - first:
+      213: -878651220390410626
+    second: water47_ spricte_fix_153
+  - first:
+      213: -1337562911060046399
+    second: water47_ spricte_fix_154
+  - first:
+      213: -4561085601414446467
+    second: water47_ spricte_fix_155
+  - first:
+      213: 6362103775807547650
+    second: water47_ spricte_fix_156
+  - first:
+      213: 2828148620718767653
+    second: water47_ spricte_fix_157
+  - first:
+      213: -7478722897103755254
+    second: water47_ spricte_fix_158
+  - first:
+      213: 2901022749630371508
+    second: water47_ spricte_fix_159
+  - first:
+      213: -703567471801508874
+    second: water47_ spricte_fix_160
+  - first:
+      213: -1794776739417815580
+    second: water47_ spricte_fix_161
+  - first:
+      213: 3039271525864595635
+    second: water47_ spricte_fix_162
+  - first:
+      213: -9201833484019970613
+    second: water47_ spricte_fix_163
+  - first:
+      213: 3707559481897870551
+    second: water47_ spricte_fix_164
+  - first:
+      213: 6005604501458279672
+    second: water47_ spricte_fix_165
+  - first:
+      213: -7689282818117959999
+    second: water47_ spricte_fix_166
+  - first:
+      213: -8929576892981048678
+    second: water47_ spricte_fix_167
+  - first:
+      213: -5082376001429012524
+    second: water47_ spricte_fix_168
+  - first:
+      213: 4429200912391274525
+    second: water47_ spricte_fix_169
+  - first:
+      213: 3223515017193707610
+    second: water47_ spricte_fix_170
+  - first:
+      213: 7237769962319639037
+    second: water47_ spricte_fix_171
+  - first:
+      213: 1661704812537657258
+    second: water47_ spricte_fix_172
+  - first:
+      213: -7575255075808091973
+    second: water47_ spricte_fix_173
+  - first:
+      213: 2004584354654267822
+    second: water47_ spricte_fix_174
+  - first:
+      213: -3306913731678649262
+    second: water47_ spricte_fix_175
+  - first:
+      213: -302052518843440605
+    second: water47_ spricte_fix_176
+  - first:
+      213: 3443354029393508090
+    second: water47_ spricte_fix_177
+  - first:
+      213: -5407632168403765435
+    second: water47_ spricte_fix_178
+  - first:
+      213: -6843079162961024446
+    second: water47_ spricte_fix_179
+  - first:
+      213: 4782714171567093320
+    second: water47_ spricte_fix_180
+  - first:
+      213: 3143134153714020571
+    second: water47_ spricte_fix_181
+  - first:
+      213: -3492491419505859989
+    second: water47_ spricte_fix_182
+  - first:
+      213: 8709453859065826871
+    second: water47_ spricte_fix_183
+  - first:
+      213: -4526586238807144603
+    second: water47_ spricte_fix_184
+  - first:
+      213: -273071149699883419
+    second: water47_ spricte_fix_185
+  - first:
+      213: 3780280094485521616
+    second: water47_ spricte_fix_186
+  - first:
+      213: 1109485129013655517
+    second: water47_ spricte_fix_187
+  - first:
+      213: -5643206254435412187
+    second: water47_ spricte_fix_188
+  - first:
+      213: -5181231317665260911
+    second: water47_ spricte_fix_189
+  - first:
+      213: 3930853020099882978
+    second: water47_ spricte_fix_190
+  - first:
+      213: 1489055994082027734
+    second: water47_ spricte_fix_191
+  - first:
+      213: -5016254479425930738
+    second: water47_ spricte_fix_192
+  - first:
+      213: 7875522707327088475
+    second: water47_ spricte_fix_193
+  - first:
+      213: 490833668163780068
+    second: water47_ spricte_fix_194
+  - first:
+      213: -7253720096037413606
+    second: water47_ spricte_fix_195
+  - first:
+      213: -5955409933594532872
+    second: water47_ spricte_fix_196
+  - first:
+      213: -4156029593405239671
+    second: water47_ spricte_fix_197
+  - first:
+      213: 5054558154066131491
+    second: water47_ spricte_fix_198
+  - first:
+      213: -7862798866983975874
+    second: water47_ spricte_fix_199
+  - first:
+      213: 2225821108823989101
+    second: water47_ spricte_fix_200
+  - first:
+      213: 7432835628766636281
+    second: water47_ spricte_fix_201
+  - first:
+      213: -927590962556493612
+    second: water47_ spricte_fix_202
+  - first:
+      213: -6217400727812547307
+    second: water47_ spricte_fix_203
+  - first:
+      213: 272984742371116810
+    second: water47_ spricte_fix_204
+  - first:
+      213: -4680168573770123254
+    second: water47_ spricte_fix_205
+  - first:
+      213: 8195063290035668682
+    second: water47_ spricte_fix_206
+  - first:
+      213: 5073468420646979459
+    second: water47_ spricte_fix_207
+  - first:
+      213: 3336264712669288692
+    second: water47_ spricte_fix_208
+  - first:
+      213: -3583376521102859364
+    second: water47_ spricte_fix_209
+  - first:
+      213: -7947612970369456190
+    second: water47_ spricte_fix_210
+  - first:
+      213: -5531686712777117041
+    second: water47_ spricte_fix_211
+  - first:
+      213: 4505989855930548715
+    second: water47_ spricte_fix_212
+  - first:
+      213: 6555198663053001873
+    second: water47_ spricte_fix_213
+  - first:
+      213: -3951380173634481435
+    second: water47_ spricte_fix_214
+  - first:
+      213: -4288090064760071304
+    second: water47_ spricte_fix_215
+  - first:
+      213: -4762165310218433497
+    second: water47_ spricte_fix_216
+  - first:
+      213: 671024104284941042
+    second: water47_ spricte_fix_217
+  - first:
+      213: -6307611109194711657
+    second: water47_ spricte_fix_218
+  - first:
+      213: -3781866449699359745
+    second: water47_ spricte_fix_219
+  - first:
+      213: 3634976110227085425
+    second: water47_ spricte_fix_220
+  - first:
+      213: -8498838442667347516
+    second: water47_ spricte_fix_221
+  - first:
+      213: 4353525435097711348
+    second: water47_ spricte_fix_222
+  - first:
+      213: 2306916452825842772
+    second: water47_ spricte_fix_223
+  - first:
+      213: -5111304330563595385
+    second: water47_ spricte_fix_224
+  - first:
+      213: 1281972274934179216
+    second: water47_ spricte_fix_225
+  - first:
+      213: -7857052604311755133
+    second: water47_ spricte_fix_226
+  - first:
+      213: 8994043529711596412
+    second: water47_ spricte_fix_227
+  - first:
+      213: -7519434977067508806
+    second: water47_ spricte_fix_228
+  - first:
+      213: 5573984966086601578
+    second: water47_ spricte_fix_229
+  - first:
+      213: 284231974196696729
+    second: water47_ spricte_fix_230
+  - first:
+      213: -7253360586408884089
+    second: water47_ spricte_fix_231
+  - first:
+      213: 339447439781002667
+    second: water47_ spricte_fix_232
+  - first:
+      213: -7310567008106464579
+    second: water47_ spricte_fix_233
+  - first:
+      213: 8714812132449482397
+    second: water47_ spricte_fix_234
+  - first:
+      213: 301596630276687327
+    second: water47_ spricte_fix_235
+  - first:
+      213: -811300630102958550
+    second: water47_ spricte_fix_236
+  - first:
+      213: -2935765658950329504
+    second: water47_ spricte_fix_237
+  - first:
+      213: 2968307573226177201
+    second: water47_ spricte_fix_238
+  - first:
+      213: 4653926083007614412
+    second: water47_ spricte_fix_239
+  - first:
+      213: -3437813765380591536
+    second: water47_ spricte_fix_240
+  - first:
+      213: 2300906645989888183
+    second: water47_ spricte_fix_241
+  - first:
+      213: -898130313465047106
+    second: water47_ spricte_fix_0
+  - first:
+      213: 2443063420323072659
+    second: water47_ spricte_fix_1
+  - first:
+      213: 3342348024776605412
+    second: water47_ spricte_fix_2
+  - first:
+      213: 3977022020794827256
+    second: water47_ spricte_fix_3
+  - first:
+      213: -5861361021527223839
+    second: water47_ spricte_fix_4
+  - first:
+      213: 6158459295125658942
+    second: water47_ spricte_fix_5
+  - first:
+      213: 7691387951364743305
+    second: water47_ spricte_fix_6
+  - first:
+      213: 1865426367041630242
+    second: water47_ spricte_fix_7
+  - first:
+      213: -5877804206523581603
+    second: water47_ spricte_fix_8
+  - first:
+      213: 7200698370897298532
+    second: water47_ spricte_fix_9
+  - first:
+      213: -5944343001055507116
+    second: water47_ spricte_fix_10
+  - first:
+      213: 5473091724491256821
+    second: water47_ spricte_fix_11
+  - first:
+      213: 5263449781643288731
+    second: water47_ spricte_fix_12
+  - first:
+      213: -4380452824090510041
+    second: water47_ spricte_fix_13
+  - first:
+      213: -6735725661383935005
+    second: water47_ spricte_fix_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water47_ spricte_fix_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 932.6666
+        width: 448.8
+        height: 466.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7d7e70d333983f0800000000000000
+      internalID: -898130313465047106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 932.6666
+        width: 448.8
+        height: 466.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a8b14ac3187e120800000000000000
+      internalID: 2443063420323072659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_2
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 932.6666
+        width: 448.8
+        height: 466.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eeb98ce1d7626e20800000000000000
+      internalID: 3342348024776605412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 932.6666
+        width: 448.8
+        height: 466.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1c16de478313730800000000000000
+      internalID: 3977022020794827256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_4
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 932.6666
+        width: 448.8
+        height: 466.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e19c8ba43348aea0800000000000000
+      internalID: -5861361021527223839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 466.66666
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ddaa9991e377550800000000000000
+      internalID: 6158459295125658942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 466.66666
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980a0de479c4dba60800000000000000
+      internalID: 7691387951364743305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 466.66666
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220f92ab56353e910800000000000000
+      internalID: 1865426367041630242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 466.66666
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b7dd25738dd6ea0800000000000000
+      internalID: -5877804206523581603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 466.66666
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464411474050ee360800000000000000
+      internalID: 7200698370897298532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.6666565
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dc107f883718da0800000000000000
+      internalID: -5944343001055507116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0.6666565
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f37e6dfce354fb40800000000000000
+      internalID: 5473091724491256821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_12
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0.6666565
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90a4ff70b78b0940800000000000000
+      internalID: 5263449781643288731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_13
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0.6666565
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d7ab87d518533c0800000000000000
+      internalID: -4380452824090510041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water47_ spricte_fix_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0.6666565
+        width: 448.8
+        height: 466.33334
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb3ab8c235e582a0800000000000000
+      internalID: -6735725661383935005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

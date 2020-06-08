@@ -194,25 +194,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1897007066632642360, guid: df2d2193729e4fc4dbe75f60d6072f40,
-        type: 3}
-      propertyPath: dashVector.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1897007066632642360, guid: df2d2193729e4fc4dbe75f60d6072f40,
-        type: 3}
-      propertyPath: dashForce
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1897007066632642362, guid: df2d2193729e4fc4dbe75f60d6072f40,
+    - target: {fileID: 5391724176062207846, guid: df2d2193729e4fc4dbe75f60d6072f40,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1897007066632642367, guid: df2d2193729e4fc4dbe75f60d6072f40,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7219479005920704693, guid: df2d2193729e4fc4dbe75f60d6072f40,
         type: 3}
@@ -681,7 +666,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

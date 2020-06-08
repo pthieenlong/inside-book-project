@@ -8,11 +8,10 @@ public class LilyAnimControl : MonoBehaviour
     public SkeletonAnimation SAnim;
     public string currentState = LilyState.Idle;
     public bool isJumping = false;
-    float baseDirection = 1;
 
     void Start()
     {
-        baseDirection = SAnim.transform.localScale.x;
+        // baseDirection = SAnim.transform.localScale.x;
         SetAnimation(LilyState.Idle, true);
     }
     public void SetAnimation(string animName, bool isLoop = true, float timeScale = 1)
@@ -23,12 +22,6 @@ public class LilyAnimControl : MonoBehaviour
             currentState = animName;
         }
     }
-
-    public void SetDirection(bool isLeft)
-    {
-        SAnim.transform.localScale = SAnim.transform.localScale.V3SetX(baseDirection * (isLeft ? -1 : 1));
-    }
-
 }
 
 public class LilyState
@@ -40,5 +33,5 @@ public class LilyState
     public const string Jump_Start = "animation - nhay rot tu tren cao xuong frame 1";
     public const string Jumping = "animation-nhay roi tu treo cao xuong fame 2";
     public const string Falling = "animation -nhay roi tu tren cao xuong fame 3";
-    public const string Fall_IsGrounded = "";
+    public const string Dead = "hit3";
 }

@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 959ae18be44943e41b1463b9611ab20e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7238309220348889730
+    second: water29-spricter_fix_0
+  - first:
+      213: -8602635686760186081
+    second: water29-spricter_fix_1
+  - first:
+      213: -2633424278652607603
+    second: water29-spricter_fix_2
+  - first:
+      213: -2896521656014666146
+    second: water29-spricter_fix_3
+  - first:
+      213: -2088046123847476382
+    second: water29-spricter_fix_4
+  - first:
+      213: -962634784984430845
+    second: water29-spricter_fix_5
+  - first:
+      213: -4203154021554009930
+    second: water29-spricter_fix_6
+  - first:
+      213: 8633092301651474695
+    second: water29-spricter_fix_7
+  - first:
+      213: -4539618292276397116
+    second: water29-spricter_fix_8
+  - first:
+      213: -908748731198538411
+    second: water29-spricter_fix_9
+  - first:
+      213: 7370376215542854122
+    second: water29-spricter_fix_10
+  - first:
+      213: 6011521473074711419
+    second: water29-spricter_fix_11
+  - first:
+      213: -5941360146055109337
+    second: water29-spricter_fix_12
+  - first:
+      213: 8863428048105680944
+    second: water29-spricter_fix_13
+  - first:
+      213: 5650888184788689041
+    second: water29-spricter_fix_0
+  - first:
+      213: -4392873432258519681
+    second: water29-spricter_fix_1
+  - first:
+      213: 3869683655319941937
+    second: water29-spricter_fix_2
+  - first:
+      213: -8166164876620107150
+    second: water29-spricter_fix_3
+  - first:
+      213: -7349436211267741482
+    second: water29-spricter_fix_4
+  - first:
+      213: -3317596859611009502
+    second: water29-spricter_fix_5
+  - first:
+      213: 524419315954450065
+    second: water29-spricter_fix_6
+  - first:
+      213: -2284608421151843173
+    second: water29-spricter_fix_7
+  - first:
+      213: -2551956191697388057
+    second: water29-spricter_fix_8
+  - first:
+      213: 1365618161807947267
+    second: water29-spricter_fix_9
+  - first:
+      213: 8857895631037475014
+    second: water29-spricter_fix_10
+  - first:
+      213: 7507843549292327522
+    second: water29-spricter_fix_11
+  - first:
+      213: -2913049999470589642
+    second: water29-spricter_fix_12
+  - first:
+      213: 2767406065638123210
+    second: water29-spricter_fix_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water29-spricter_fix_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1117
+        width: 82
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19028c74ddcfb6e40800000000000000
+      internalID: 5650888184788689041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_1
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1070
+        width: 184
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ddaf643e06903c0800000000000000
+      internalID: -4392873432258519681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_2
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1059
+        width: 236
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133fa7438c0e3b530800000000000000
+      internalID: 3869683655319941937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_3
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1037
+        width: 293
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27279c79f44fbae80800000000000000
+      internalID: -8166164876620107150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_4
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1030
+        width: 306
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d85eff64be810a90800000000000000
+      internalID: -7349436211267741482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_5
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 560
+        width: 312
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e2feacb3785f1d0800000000000000
+      internalID: -3317596859611009502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_6
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 557
+        width: 316
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e71d0e69c174700800000000000000
+      internalID: 524419315954450065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_7
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 552
+        width: 320
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cd06eceb07b40e0800000000000000
+      internalID: -2284608421151843173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 551
+        width: 320
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edb48f4d51a59cd0800000000000000
+      internalID: -2551956191697388057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_9
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 547
+        width: 322
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30672699b76a3f210800000000000000
+      internalID: 1365618161807947267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 88
+        width: 321
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8297135219dea70800000000000000
+      internalID: 8857895631037475014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_11
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 88
+        width: 323
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262f6c80ee7313860800000000000000
+      internalID: 7507843549292327522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_12
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 86
+        width: 323
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6398a90a574c297d0800000000000000
+      internalID: -2913049999470589642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water29-spricter_fix_13
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 98
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac62f93872dc76620800000000000000
+      internalID: 2767406065638123210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
