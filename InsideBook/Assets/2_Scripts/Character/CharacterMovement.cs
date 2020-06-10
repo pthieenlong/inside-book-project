@@ -22,19 +22,23 @@ public class CharacterMovement : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
         {
-            moveDirection = 0;
+            // moveDirection = 0;
+            UIJoystick.Instance.OnPointerUp();
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            moveDirection = -1;
+            // moveDirection = -1;
+            UIJoystick.Instance.MoveLeft();
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            moveDirection = 1;
+            // moveDirection = 1;
+            UIJoystick.Instance.MoveRight();
         }
 
+        moveDirection = UIJoystick.JoystickDirection.x;
         moveController.dashVector.x = moveController._Object.transform.localScale.x;
 
         if (moveDirection > 0)      // Right
