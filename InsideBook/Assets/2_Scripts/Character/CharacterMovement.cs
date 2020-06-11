@@ -43,9 +43,12 @@ public class CharacterMovement : MonoBehaviour
 
         if (moveDirection > 0)      // Right
         {
+
             moveController.MovingRight();
             if (!AnimLily.isJumping && IsGrounded())
                 AnimLily.SetAnimation(LilyState.Move);
+            
+            
         }
         else if (moveDirection < 0) // Left
         {

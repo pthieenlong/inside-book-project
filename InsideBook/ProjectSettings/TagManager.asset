@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Dead
+  - ViewRange
   layers:
   - Default
   - TransparentFX

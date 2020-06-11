@@ -12,6 +12,8 @@ public class MoveObject : MonoBehaviour
     public float speed = 20f;
     public float jumpForce = 10f;
 
+    public bool isMonster = false;
+
     [Header("Dashing Fields")]
     public Vector2 dashVector;
     public Animator DashFX;
@@ -30,6 +32,7 @@ public class MoveObject : MonoBehaviour
     void Start()
     {
         _Object.GetComponent<Rigidbody>();
+        
     }
 
     void Update()
