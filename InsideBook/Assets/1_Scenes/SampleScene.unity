@@ -1121,25 +1121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flying Mask
       objectReference: {fileID: 0}
-    - target: {fileID: 3675312560332817888, guid: 874ff67f693ef45049775c82a572d40d,
+    - target: {fileID: 3675312560332817883, guid: 874ff67f693ef45049775c82a572d40d,
         type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675312560332817892, guid: 874ff67f693ef45049775c82a572d40d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675312560332817892, guid: 874ff67f693ef45049775c82a572d40d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675312560332817892, guid: 874ff67f693ef45049775c82a572d40d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.745393
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3675312560332817892, guid: 874ff67f693ef45049775c82a572d40d,
         type: 3}
@@ -1181,10 +1166,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3675312560332817892, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675312560332817892, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.28
+      objectReference: {fileID: 0}
     - target: {fileID: 3675312561202236604, guid: 874ff67f693ef45049775c82a572d40d,
         type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675312561202236605, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3675312561202236607, guid: 874ff67f693ef45049775c82a572d40d,
         type: 3}
@@ -1200,6 +1200,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675312561302359831, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675312561302359831, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985127671060716174, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: followSpeed
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985127671060716174, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: speed
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985127671060716174, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 762482170}
+    - target: {fileID: 6985127671060716174, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: overDistance.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985127671060716174, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: overDistance.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248053474449084325, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248053474449084325, guid: 874ff67f693ef45049775c82a572d40d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 7.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 874ff67f693ef45049775c82a572d40d, type: 3}

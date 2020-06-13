@@ -44,7 +44,7 @@ public class CameraSetting : MonoBehaviour
                                  Mathf.Clamp(transform.position.y, yDownLimit, yUpLimit), transform.position.z);
 
     }
-
+    
     public void SwitchToBossRoomState(Vector3 CamPos, float orthoSize, float tweenTime)
     {
         cameraState = CameraState.BossRoom;
