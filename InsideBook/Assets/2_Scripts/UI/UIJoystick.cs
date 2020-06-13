@@ -23,8 +23,7 @@ public class UIJoystick : MonoBehaviour
             VectorClamp.y = Mathf.Clamp(VectorClamp.y, origin.position.y - LimitRange, origin.position.y + LimitRange);
 
             handle.position = VectorClamp;
-            JoystickDirection = (handle.position - origin.position);
-            JoystickDirection.Normalize();
+            SetDirection();
         }
     }
 
@@ -39,6 +38,7 @@ public class UIJoystick : MonoBehaviour
         VectorClamp = handle.position;
         VectorClamp.x = origin.position.x - LimitRange;
         handle.position = VectorClamp;
+        SetDirection();
     }
 
     public void MoveRight()
@@ -46,6 +46,7 @@ public class UIJoystick : MonoBehaviour
         VectorClamp = handle.position;
         VectorClamp.x = origin.position.x + LimitRange;
         handle.position = VectorClamp;
+        SetDirection();
     }
 
     public void MoveUp()
@@ -53,6 +54,7 @@ public class UIJoystick : MonoBehaviour
         VectorClamp = handle.position;
         VectorClamp.y = origin.position.y - LimitRange;
         handle.position = VectorClamp;
+        SetDirection();
     }
 
     public void MoveDown()
@@ -60,7 +62,12 @@ public class UIJoystick : MonoBehaviour
         VectorClamp = handle.position;
         VectorClamp.y = origin.position.y + LimitRange;
         handle.position = VectorClamp;
+        SetDirection();
     }
 
-
+    void SetDirection()
+    {
+        JoystickDirection = (handle.position - origin.position);
+        JoystickDirection.Normalize();
+    }
 }

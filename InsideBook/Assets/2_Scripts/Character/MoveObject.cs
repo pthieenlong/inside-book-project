@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class MoveObject : MonoBehaviour
 {
-    [Header("Moving Fields")]
+    [Header("Moving")]
     public bool canMove = true;
     public Rigidbody2D _Object;
     public GameObject ModelObj;
@@ -14,7 +14,7 @@ public class MoveObject : MonoBehaviour
 
     public bool isMonster = false;
 
-    [Header("Dashing Fields")]
+    [Header("Dashing")]
     public Vector2 dashVector;
     public Animator DashFX;
     public Animator SplashFx;
@@ -22,6 +22,7 @@ public class MoveObject : MonoBehaviour
     public float dashTime = 0.25f;
     public int dashCount = 1;
     public bool isDashing = false;
+    public bool isAutoMove = false;
 
     float moveDirection = 1;
     float gravityScale = 6f;
@@ -29,10 +30,11 @@ public class MoveObject : MonoBehaviour
     float scaleTime = 0.2f;
     float timeCount = 0;
     float baseDirection = 1;
+
     void Start()
     {
         _Object.GetComponent<Rigidbody>();
-        
+        isAutoMove = false;
     }
 
     void Update()
@@ -44,22 +46,51 @@ public class MoveObject : MonoBehaviour
     }
 
     #region Moving
+
+    public void AutoMoveByTime(bool is_left, float speed, float duration)
+    {
+        isAutoMove = true;
+        StartCoroutine(AutoMoveRoute(duration, is_left));
+    }
+
+    IEnumerator AutoMoveRoute(float duration, bool is_left)
+    {
+        float dur = duration;
+        while (dur > 0)
+        {
+            dur -= Time.deltaTime;
+            if (is_left)
+                MovingLeft();
+            else
+                MovingRight();
+            yield return Time.deltaTime;
+        }
+
+        isAutoMove = false;
+        UIJoystick.Instance.OnPointerUp();
+        StopMoving();
+        yield return null;
+    }
     public void StopMoving()
     {
         _Object.velocity = _Object.velocity.V2SetX(0);
     }
 
-    public void MovingRight()
+    public void MovingRight(float v = 0)
     {
-        // _Object.velocity = Vector2.right * speed * Time.deltaTime;
-        _Object.velocity = _Object.velocity.V2SetX(Vector2.right.x * speed);
+        if (v == 0)
+            _Object.velocity = _Object.velocity.V2SetX(Vector2.right.x * speed);
+        else
+            _Object.velocity = _Object.velocity.V2SetX(Vector2.right.x * v);
         moveDirection = 1;
         SetDirection(false);
     }
-    public void MovingLeft()
+    public void MovingLeft(float v = 0)
     {
-        // _Object.velocity = Vector2.left * speed * Time.deltaTime;
-        _Object.velocity = _Object.velocity.V2SetX(Vector2.left.x * speed);
+        if (v == 0)
+            _Object.velocity = _Object.velocity.V2SetX(Vector2.left.x * speed);
+        else
+            _Object.velocity = _Object.velocity.V2SetX(Vector2.left.x * v);
         moveDirection = -1;
         SetDirection(true);
     }
@@ -75,9 +106,9 @@ public class MoveObject : MonoBehaviour
     {
         dashCount--;
         timeCount = 0;
+        currentScale = ModelObj.transform.parent.localScale.z;
         gravityScale = _Object.gravityScale;
         _Object.gravityScale = 0;
-        currentScale = ModelObj.transform.parent.localScale.z;
         _Object.velocity = Vector3.up * 5f;
         canMove = false;
         DashFX.Play("StartDash");
@@ -85,10 +116,11 @@ public class MoveObject : MonoBehaviour
         ModelObj.transform.parent.DOScale(Vector3.one * currentScale * 0.25f, scaleTime).OnComplete(() =>
         {
             isDashing = true;
-            // _Object.velocity = _Object.velocity.V2SetX(dashForce * moveDirection);
+            dashVector = UIJoystick.JoystickDirection;
+            if (dashVector.x == 0)
+                dashVector.x = _Object.transform.localScale.x;
             _Object.velocity = (dashVector * dashForce);
             PlaySplashFX();
-            // DashFX.gameObject.SetActive(false);
         });
     }
     public void Dashing()
@@ -105,6 +137,7 @@ public class MoveObject : MonoBehaviour
     {
         isDashing = false;
         _Object.velocity = Vector3.zero;
+        UIJoystick.Instance.OnPointerUp();
         DashFX.Play("EndDash");
 
         ModelObj.transform.parent.DOScale(Vector3.one * currentScale, scaleTime).OnComplete(() =>
@@ -118,7 +151,6 @@ public class MoveObject : MonoBehaviour
     {
         SplashFx.transform.position = ModelObj.transform.parent.position;
         SplashFx.transform.right = _Object.velocity.normalized;
-        // SplashFx.transform.gameObject.SetActive(true);
         SplashFx.Play("WaterSplash");
     }
     #endregion Dashing Skill

@@ -13,13 +13,17 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
-        if (moveController.canMove && !GamePlaySetting.IsDead)
+        if (canControl && moveController.canMove && !GamePlaySetting.IsDead)
             PlayerCharacterControl();
+
+        ApplyMovement();
     }
     public void PlayerCharacterControl()
     {
-        #region Horizontal
+        if (!canControl)
+            return;
 
+        #region Horizontal
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
         {
             // moveDirection = 0;
@@ -39,29 +43,6 @@ public class CharacterMovement : MonoBehaviour
         }
 
         moveDirection = UIJoystick.JoystickDirection.x;
-        moveController.dashVector.x = moveController._Object.transform.localScale.x;
-
-        if (moveDirection > 0)      // Right
-        {
-
-            moveController.MovingRight();
-            if (!AnimLily.isJumping && IsGrounded())
-                AnimLily.SetAnimation(LilyState.Move);
-            
-            
-        }
-        else if (moveDirection < 0) // Left
-        {
-            moveController.MovingLeft();
-            if (!AnimLily.isJumping && IsGrounded())
-                AnimLily.SetAnimation(LilyState.Move, true);
-        }
-        else
-        {
-            if (!AnimLily.isJumping && IsGrounded())
-                AnimLily.SetAnimation(LilyState.Idle);
-        }
-
         #endregion Horizontal
 
         #region Vertical
@@ -78,19 +59,7 @@ public class CharacterMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {
-            if (IsGrounded() && !AnimLily.isJumping)
-            {
-                AnimLily.isJumping = true;
-                StartCoroutine(JumpRoutine());
-            }
-        }
-
-        if (!IsGrounded())
-        {
-            if (moveController._Object.velocity.y < 0)
-            {
-                AnimLily.SetAnimation(LilyState.Falling, false);
-            }
+            UseJump();
         }
         #endregion Vertical
 
@@ -98,13 +67,66 @@ public class CharacterMovement : MonoBehaviour
         //Dash
         if (Input.GetKeyDown(KeyCode.J))
         {
-            if (IsGrounded() || moveController.dashCount > 0)
-            {
-                moveController.StartDash();
-                moveDirection = 0;
-            }
+            UseDash();
         }
         #endregion Attack
+    }
+
+    public void ApplyMovement()
+    {
+        if (!moveController.isAutoMove)
+        {
+            if (moveDirection > 0)      // Right
+            {
+                moveController.MovingRight();
+                if (!AnimLily.isJumping && IsGrounded())
+                    AnimLily.SetAnimation(LilyState.Move);
+            }
+            else if (moveDirection < 0) // Left
+            {
+                moveController.MovingLeft();
+                if (!AnimLily.isJumping && IsGrounded())
+                    AnimLily.SetAnimation(LilyState.Move, true);
+            }
+            else
+            {
+                if (!AnimLily.isJumping && IsGrounded() && !moveController.isDashing)
+                    AnimLily.SetAnimation(LilyState.Idle);
+            }
+        }
+        if (!IsGrounded())
+        {
+            if (moveController._Object.velocity.y < 0)
+            {
+                AnimLily.SetAnimation(LilyState.Falling, false);
+            }
+        }
+    }
+
+    public void AutoMoveTo(Vector3 des, float duration)
+    {
+        moveDirection = 0;
+        AnimLily.SetAnimation(LilyState.Move);
+        float direction = (des - moveController._Object.transform.position).x;
+        bool isLeft = direction / Mathf.Abs(direction) < 0;
+        moveController.AutoMoveByTime(isLeft, Mathf.Abs(direction) / duration, duration);
+    }
+
+    public void UseJump()
+    {
+        if (IsGrounded() && !AnimLily.isJumping)
+        {
+            AnimLily.isJumping = true;
+            StartCoroutine(JumpRoutine());
+        }
+    }
+    public void UseDash()
+    {
+        if (IsGrounded() || moveController.dashCount > 0)
+        {
+            moveController.StartDash();
+            moveDirection = 0;
+        }
     }
 
     public float raycastRange = 0.3f;
@@ -146,6 +168,7 @@ public class CharacterMovement : MonoBehaviour
         GamePlaySetting.IsDead = true;
         moveController._Object.isKinematic = true;
         moveController._Object.velocity = Vector3.zero;
+        moveDirection = 0;
         AnimLily.SetAnimation(LilyState.Dead, false);
         Invoke("OnReSpawn", 2);
     }
