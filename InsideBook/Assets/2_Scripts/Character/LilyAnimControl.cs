@@ -1,12 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Spine.Unity;
+﻿using UnityEngine;
 
-public class LilyAnimControl : MonoBehaviour
+public class LilyAnimControl : SpineAnimControl
 {
-    public SkeletonAnimation SAnim;
-    public string currentState = LilyState.Idle;
     public bool isJumping = false;
 
     void Start()
@@ -14,14 +9,7 @@ public class LilyAnimControl : MonoBehaviour
         // baseDirection = SAnim.transform.localScale.x;
         SetAnimation(LilyState.Idle, true);
     }
-    public void SetAnimation(string animName, bool isLoop = true, float timeScale = 1)
-    {
-        if (currentState != animName)
-        {
-            SAnim.state.SetAnimation(0, animName, isLoop).TimeScale = timeScale;
-            currentState = animName;
-        }
-    }
+
 }
 
 public class LilyState

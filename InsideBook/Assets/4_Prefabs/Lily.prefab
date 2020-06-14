@@ -4896,7 +4896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 482462644941868262}
   m_Layer: 8
-  m_Name: Anchor
+  m_Name: ScaleOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4982,7 +4982,7 @@ GameObject:
   - component: {fileID: 7816724912075460422}
   - component: {fileID: 4183002928197313596}
   m_Layer: 8
-  m_Name: LilyModel
+  m_Name: Lily [Spine]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5181,12 +5181,15 @@ MonoBehaviour:
   ModelObj: {fileID: 8375651076362335179}
   speed: 5
   jumpForce: 10
+  isMonster: 0
+  dashVector: {x: 0, y: 0}
   DashFX: {fileID: 2827994436458513601}
   SplashFx: {fileID: 0}
   dashForce: 35
   dashTime: 0.25
   dashCount: 1
   isDashing: 0
+  isAutoMove: 0
 --- !u!114 &489444741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5219,6 +5222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761f3d3bc7c9519439429e892fd5e115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SAnim: {fileID: 4183002928197313596}
+  Anim: {fileID: 0}
   currentState: tho
   isJumping: 0

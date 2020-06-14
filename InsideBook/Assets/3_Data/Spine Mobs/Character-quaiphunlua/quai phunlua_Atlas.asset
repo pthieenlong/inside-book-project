@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: quai phunlua_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 5777f3803ea0320429c85a93b9ef9d19, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 099adbbe35a198b4aa8a4bd55c9faf45, type: 2}
+  - {fileID: 2100000, guid: c622560ee5b318647b7ac9b95a016e8d, type: 2}
+  - {fileID: 2100000, guid: d97df6297ff633748bb0a5962bae629c, type: 2}
+  - {fileID: 2100000, guid: 2a3ac053007cbd14ab163509dce0c097, type: 2}
+  - {fileID: 2100000, guid: 45a59242c6637d540a13c8dcf7d390ac, type: 2}
+  - {fileID: 2100000, guid: 2a0c2035b2afe6f4893efa888dbe6204, type: 2}
+  - {fileID: 2100000, guid: 2d1cc849e0c5551438830e11a7d07955, type: 2}
+  - {fileID: 2100000, guid: 6c2b0c300d756f843878f452b0ad6db6, type: 2}
+  - {fileID: 2100000, guid: cfac77baaa205764398261fbb64269d6, type: 2}
+  - {fileID: 2100000, guid: 000b488a25053294f81825de4960f3ff, type: 2}
+  - {fileID: 2100000, guid: ca0987219e3d78d448298c9f4f173b69, type: 2}
+  - {fileID: 2100000, guid: 61b7138f2bb019a44a369f4aa72276af, type: 2}
+  - {fileID: 2100000, guid: 0610000d9f666354888e1726d5aa42f5, type: 2}
+  - {fileID: 2100000, guid: c584678f35df146409c265df257c3ba8, type: 2}
+  - {fileID: 2100000, guid: 21d33041d3bdf1b4d9915a2d6dec900b, type: 2}
+  - {fileID: 2100000, guid: 28213730f98d3aa4297ff537de607091, type: 2}

@@ -31,11 +31,14 @@ public class BossRoomTrigger : MonoBehaviour
             DOVirtual.DelayedCall(tweenTime / 3, () =>
               {
                   // block door
-                  RockPillar.gameObject.SetActive(true);
                   UIJoystick.Instance.OnPointerUp();
               });
 
             // boss raise
+            DOVirtual.DelayedCall(tweenTime + 2, () =>
+            {
+                RockPillar.gameObject.SetActive(true);
+            });
             // show ui / unlock control
         }
     }

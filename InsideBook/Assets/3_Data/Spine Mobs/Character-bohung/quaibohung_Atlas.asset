@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: quaibohung_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 1d24995d61086614aa84ca740e2fdc4b, type: 3}
+  materials:
+  - {fileID: 2100000, guid: c17388afd7a16e944a8f9ae2519912d4, type: 2}
+  - {fileID: 2100000, guid: d989f816ee464c3408e4cfa42c5fbd74, type: 2}
+  - {fileID: 2100000, guid: fbbcc96f8c4355b4784300e73b8b8cf0, type: 2}
+  - {fileID: 2100000, guid: a74aead035db83c41a5ef096babbf7fe, type: 2}
+  - {fileID: 2100000, guid: 78618d0b1d413164bb173520ba943f4e, type: 2}
+  - {fileID: 2100000, guid: 84133e4967c1baf438426c37a282e87c, type: 2}
+  - {fileID: 2100000, guid: 3bccb25b69e7ee64f822972be10502af, type: 2}
+  - {fileID: 2100000, guid: 0b3b8fd3a92ec7e489b3821281ba611b, type: 2}
+  - {fileID: 2100000, guid: af3b010346a2f3647b38b1f620074597, type: 2}
+  - {fileID: 2100000, guid: 5b042bf982b1b554a81d38f3fd1080cf, type: 2}
+  - {fileID: 2100000, guid: 79e4bcce7dd424849b2e5f4fd5951d14, type: 2}
+  - {fileID: 2100000, guid: 48d6d6fefc920804aae043194c1c5c5f, type: 2}
+  - {fileID: 2100000, guid: 954ce199a2faf1846bae328fe5567c02, type: 2}
+  - {fileID: 2100000, guid: 0a76c826774fa964eba74ff6604b3373, type: 2}
+  - {fileID: 2100000, guid: 75a2cb4d604b1f247b6368b3ab00d7bf, type: 2}
+  - {fileID: 2100000, guid: 3ca564ea3c5cc8e4e99e3fa56b86e8f9, type: 2}
+  - {fileID: 2100000, guid: f14e35150cb4d3541b37e6e270f9f30c, type: 2}

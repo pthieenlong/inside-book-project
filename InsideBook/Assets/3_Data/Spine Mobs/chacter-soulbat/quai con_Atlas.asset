@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: quai con_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 60ddc5ac4f1955f43953e7cbe8d0aa95, type: 3}
+  materials:
+  - {fileID: 2100000, guid: cb0074956aa31fa4ea980133437f44d0, type: 2}
+  - {fileID: 2100000, guid: 02a9bba944224dd4e8c08d81a02f9a69, type: 2}
+  - {fileID: 2100000, guid: b9334e10861e37141a91935d21a628fd, type: 2}
+  - {fileID: 2100000, guid: 64a9d909c420c5a4b9c5edd9248e3e62, type: 2}
+  - {fileID: 2100000, guid: 2e4fdae2c9b68174ab1b4fe8cdd2fa60, type: 2}
+  - {fileID: 2100000, guid: d3ffa492324638b44b7de9488ee9b877, type: 2}
+  - {fileID: 2100000, guid: a4cd55e84c770544bb6b0ea734b06d54, type: 2}
+  - {fileID: 2100000, guid: 8fd0f1a60526277498b352d1a57fdf90, type: 2}
+  - {fileID: 2100000, guid: 11060cda81660b8489eff95ff2381b2a, type: 2}
+  - {fileID: 2100000, guid: 588cded90af183b4db2fa72d76a0f4d4, type: 2}
+  - {fileID: 2100000, guid: 18f129776deefa340bb1ed679782cb78, type: 2}
+  - {fileID: 2100000, guid: ee8eed9eb189161428fef20dabc8aa12, type: 2}
+  - {fileID: 2100000, guid: e41a28d9df2c10745b08385344163bf0, type: 2}
+  - {fileID: 2100000, guid: 0884ed7339c20814ab6db289b4a0b119, type: 2}
+  - {fileID: 2100000, guid: 1bb93f6e33f5788469ed3681cdd94037, type: 2}
+  - {fileID: 2100000, guid: 341c773cea39ba54bb93d177edb3c061, type: 2}
+  - {fileID: 2100000, guid: 4fb32924cf85caf44ab9901b8ff030f8, type: 2}
+  - {fileID: 2100000, guid: f633ba4a7b3a9d340912ecfdfd0a10e2, type: 2}
+  - {fileID: 2100000, guid: 8e81889b41beebb4285cf10b1ed9259a, type: 2}
+  - {fileID: 2100000, guid: 439b9fed6165b254b9e14c82a148e37f, type: 2}
+  - {fileID: 2100000, guid: 7fbe5d2dfe04ea74a8f54cf1c17b25e6, type: 2}
+  - {fileID: 2100000, guid: 31e3052296eab7f4f8c0f020ec8bf4f2, type: 2}
