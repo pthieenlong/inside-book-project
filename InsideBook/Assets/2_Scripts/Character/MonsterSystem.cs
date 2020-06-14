@@ -6,32 +6,46 @@ public class MonsterSystem : MonoBehaviour
 {
     public GameObject target;
     public FlyingMaskController AnimMask;
+    public ViewRange viewRange;
+    public AttackRange attackRange;
     public float speed;
     public float moveLength;
     public float followSpeed;
-    public Vector3 overDistance = new Vector3(5,5);
-    bool isFollow = false;
-    float moveDirection = 0;
+    public float coolDownTime;
+    
+    bool isAttack = false;
+    //public Vector3 overDistance = new Vector3(5,5);
+    //MoveObject moveObject;
+    // public bool isFollow = false;
     void Update()
     {
         MonsterLoopMove();
     }
     void LateUpdate(){
-        if(isFollow == true){
+        if(viewRange.isFollow == true){
+            //transform.LookAt(target.transform);
             transform.position = Vector3.Lerp(transform.position, target.transform.position, followSpeed * Time.deltaTime);
         }
-    }
-    public void MonsterLoopMove(){
-        if(isFollow == false)
-        transform.position = new Vector2(Mathf.PingPong(Time.time, moveLength), transform.position.y);
-    }
-    
-    void OnTriggerEnter2D(Collider2D viewRange){
-        if(viewRange.transform.CompareTag("Player")){
-            isFollow = true;
+        if(GamePlaySetting.IsDead == true){
+            viewRange.isFollow = false;
         }
     }
-    void OnTriggerExit2D(Collider2D viewRange){
-        isFollow = false;
+
+    public void MonsterLoopMove(){
+        if(viewRange.isFollow == false)
+        transform.position = new Vector2(Mathf.PingPong(Time.time, moveLength), transform.position.y);
+    }
+    public void MonsterAttack(){
+        if(attackRange.isOnAttackRange == true){
+            AnimMask.SetAnimation(MonsterState.Attack,false);
+            isAttack = true;
+            AttackCooldown();
+        }
+    }
+    public void AttackCooldown(){
+        if(isAttack){
+            coolDownTime -= Time.deltaTime;
+            isAttack = false;
+        }
     }
 }

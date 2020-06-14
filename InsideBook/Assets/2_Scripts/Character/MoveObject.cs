@@ -12,8 +12,6 @@ public class MoveObject : MonoBehaviour
     public float speed = 20f;
     public float jumpForce = 10f;
 
-    public bool isMonster = false;
-
     [Header("Dashing")]
     public Vector2 dashVector;
     public Animator DashFX;
