@@ -13,11 +13,17 @@ MonoBehaviour:
   m_Name: Characte_bongma_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 1c9fb7c1d1a5f924682ce1d454a7adcf, type: 2}
+  - {fileID: 11400000, guid: e42989c102c40694d95906e481466dac, type: 2}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: a6a47bd888e613c43ac70a403e04fd63, type: 3}
-  fromAnimation: []
-  toAnimation: []
-  duration: []
+  fromAnimation:
+  - hinh thai ban dau
+  - xuat hien
+  toAnimation:
+  - xuat hien
+  - tho
+  duration:
+  - 0
+  - 0
   defaultMix: 0.2
   controller: {fileID: 0}

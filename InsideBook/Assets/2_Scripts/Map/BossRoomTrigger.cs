@@ -4,8 +4,9 @@ using UnityEngine;
 using DG.Tweening;
 public class BossRoomTrigger : MonoBehaviour
 {
-    [Header("Character")]
-    public CharacterMovement Lily;
+    [Header("Characters")]
+    public TheGhostControl TheGhost;
+    public LilyController Lily;
     public Transform EnterPosition;
 
     [Header("Camera")]
@@ -29,17 +30,18 @@ public class BossRoomTrigger : MonoBehaviour
             //move lily
             Lily.AutoMoveTo(EnterPosition.position, tweenTime / 3);
             DOVirtual.DelayedCall(tweenTime / 3, () =>
-              {
-                  // block door
-                  UIJoystick.Instance.OnPointerUp();
-              });
+            {
+                UIJoystick.Instance.OnPointerUp();
+            });
 
             // boss raise
             DOVirtual.DelayedCall(tweenTime + 2, () =>
             {
                 RockPillar.gameObject.SetActive(true);
+                TheGhost.Raise();
+                UIControl.Instance.ShowUI();
+                Lily.canControl = true;
             });
-            // show ui / unlock control
         }
     }
 }

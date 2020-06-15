@@ -5101,9 +5101,9 @@ GameObject:
   - component: {fileID: 9107184476453827732}
   - component: {fileID: 9107184476453827737}
   - component: {fileID: 489444739}
-  - component: {fileID: 9107184476453827735}
   - component: {fileID: 489444741}
   - component: {fileID: 489444742}
+  - component: {fileID: 7334532747275869181}
   m_Layer: 0
   m_Name: Lily
   m_TagString: Player
@@ -5164,31 +5164,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.011266291, y: 0.6766541}
   m_Size: {x: 0.62477505, y: 1.534286}
   m_Direction: 0
---- !u!114 &9107184476453827735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9107184476453827728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e82dff63784016a4198e5f77c1711d07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canMove: 1
-  _Object: {fileID: 9107184476453827737}
-  ModelObj: {fileID: 8375651076362335179}
-  speed: 5
-  jumpForce: 10
-  dashVector: {x: 0, y: 0}
-  DashFX: {fileID: 2827994436458513601}
-  SplashFx: {fileID: 0}
-  dashForce: 35
-  dashTime: 0.25
-  dashCount: 1
-  isDashing: 0
-  isAutoMove: 0
 --- !u!114 &489444741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5202,7 +5177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canControl: 1
-  moveController: {fileID: 9107184476453827735}
+  moveController: {fileID: 7334532747275869181}
   AnimLily: {fileID: 489444742}
   LayerGround:
     serializedVersion: 2
@@ -5221,6 +5196,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761f3d3bc7c9519439429e892fd5e115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
+  Anim: {fileID: 4183002928197313596}
   currentState: tho
   isJumping: 0
+--- !u!114 &7334532747275869181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107184476453827728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbc342634799624f81d7e111429b88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 1
+  _Object: {fileID: 9107184476453827737}
+  ModelObj: {fileID: 8375651076362335179}
+  speed: 5
+  jumpForce: 12
+  isAutoMove: 0
+  dashVector: {x: 0, y: 0}
+  DashFX: {fileID: 2827994436458513601}
+  SplashFx: {fileID: 0}
+  dashForce: 40
+  dashTime: 0.25
+  dashCount: 1
+  isDashing: 0

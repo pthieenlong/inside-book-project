@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+public class LilyController : MonoBehaviour
 {
     public bool canControl = true;
-    public MoveObject moveController;
+    public LilyMoveControl moveController;
     public LilyAnimControl AnimLily;
     public LayerMask LayerGround;
     float moveDirection = 0;
