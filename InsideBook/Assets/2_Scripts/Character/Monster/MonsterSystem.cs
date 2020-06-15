@@ -8,19 +8,24 @@ public class MonsterSystem : MonoBehaviour
     public ViewRange viewRange;
     public AttackRange attackRange;
     public float speed;
-    public float moveLength;
+    public float endPos;
+    // public float maxLength;
+    // public float minLength;
     public float followSpeed;
-    public float coolDownTime;
+    public float countDownTime;
     public bool isAttack = false;
-    public bool isLoopMove = false;
+    public bool isLoopMove = true;
+
+    //public float counter;
     float timeTemp;
     Vector3 facingLeft = new Vector3(-1,1,1);
     Vector3 facingRight = new Vector3(1,1,1);
+    
     //public Vector3 overDistance = new Vector3(5,5);
     //MoveObject moveObject;
     // public bool isFollow = false;
         // void Start(){
-        //     timeTemp = coolDownTime;
+        //     timeTemp = countDownTime;
         // }
         // void Update()
         // {
@@ -40,10 +45,30 @@ public class MonsterSystem : MonoBehaviour
         // }
         
 #region Moving And Facing
-    public void MonsterLoopMove(){
+    public void MonsterLoopMove(float startPos){
         if(viewRange.isFollow == false){
+            //Debug.Log("is loop");
             isLoopMove = true;
-            transform.position = new Vector2(Mathf.PingPong(Time.time, moveLength), transform.position.y);
+            transform.position = new Vector3(Mathf.Lerp(startPos,endPos,Mathf.PingPong(Time.time,1)),transform.position.y);//(min, max, Mathf.Pingpong(Time.time, 1));
+        }
+        FacingWhileLoop(startPos);
+    }
+    public void FacingWhileLoop(float startPos){
+        if(startPos < endPos){
+            if(this.transform.position.x == endPos){
+                this.transform.localScale = facingLeft;
+            } 
+            if(this.transform.position.x == startPos){
+                this.transform.localScale = facingRight;
+            }
+        }
+        if(startPos > endPos){
+            if(this.transform.position.x == startPos){
+                this.transform.localScale = facingLeft;
+            }
+            if(this.transform.position.x == endPos){
+                this.transform.localScale = facingRight;
+            }
         }
     }
     public void MonsterChasing(){
@@ -65,15 +90,15 @@ public class MonsterSystem : MonoBehaviour
             AttackCooldown();
     }
     public void AttackCooldown(){
-        coolDownTime -= Time.deltaTime;
-        if(coolDownTime <= 0){
+     countDownTime -= Time.deltaTime;
+        if(countDownTime <= 0){
             EndAttack();
         }
     }
     public void EndAttack(){
         isAttack = false;
         //Anim.SetAnimation(state,isLoop);
-        coolDownTime = timeTemp;
+     countDownTime = timeTemp;
     }
     #endregion Attack
 }

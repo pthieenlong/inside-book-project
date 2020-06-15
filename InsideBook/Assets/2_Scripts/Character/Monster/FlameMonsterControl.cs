@@ -2,43 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BugMonster : SpineAnimControl
+public class FlameMonsterControl : SpineAnimControl
 {
     public MonsterSystem monsterSystem;
+    float startPos;
     void Start(){
-        SetAnimation(BugState.Idle,true);
+        startPos = this.transform.position.x;
+
+        SetAnimation(FlameState.Idle,true);
     }
     void Update(){
-        monsterSystem.LookAtPlayer();
+        if(monsterSystem.isAttack == false){
+            SetAnimation(SoulBatState.Idle, true);
+        }
+        
         if(monsterSystem.isLoopMove){
-            monsterSystem.MonsterLoopMove();
+            monsterSystem.MonsterLoopMove(startPos);
         }
         monsterSystem.MonsterAttack();
         if(monsterSystem.isAttack == true){
-            SetAnimation(BugState.Attack);
+            SetAnimation(SoulBatState.Attack, false);
         }
-        if(monsterSystem.isAttack == false && monsterSystem.viewRange.isFollow){
-            SetAnimation(BugState.Move);
-        } else 
-            SetAnimation(BugState.Idle);
+        
     }
     void LateUpdate(){
+        monsterSystem.LookAtPlayer();
         if(monsterSystem.viewRange.isFollow == true){
-            SetAnimation(BugState.Move, true);
             monsterSystem.MonsterChasing();
 
         }
         if(GamePlaySetting.IsDead == true){
-            SetAnimation(BugState.Die, false);
+            SetAnimation(SoulBatState.Die, false);
             monsterSystem.viewRange.isFollow = false;
 
         } 
     }
 }
-public class BugState
+public class FlameState
 {
-    public const string Move = "di chuyen";
     public const string Idle = "tho";
-    public const string Die = "hit";
     public const string Attack = "skill";
+    public const string Die = "hit";
 }
+

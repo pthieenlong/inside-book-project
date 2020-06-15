@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlyingMaskController : SpineAnimControl
+public class BugMonsterControl : SpineAnimControl
 {
     public MonsterSystem monsterSystem;
     float startPos;
-    void Start()
-    {
+    void Start(){
         startPos = this.transform.position.x;
-        SetAnimation(FlyingMaskState.Idle, true);
+
+        SetAnimation(BugState.Idle,true);
     }
     void Update(){
         monsterSystem.LookAtPlayer();
@@ -18,26 +18,30 @@ public class FlyingMaskController : SpineAnimControl
         }
         monsterSystem.MonsterAttack();
         if(monsterSystem.isAttack == true){
-            SetAnimation(FlyingMaskState.Attack);
+            SetAnimation(BugState.Attack);
         }
-        if(monsterSystem.isAttack == false){
-            SetAnimation(FlyingMaskState.Idle);
-        }
+        if(monsterSystem.isAttack == false && monsterSystem.viewRange.isFollow){
+            SetAnimation(BugState.Move);
+        } else 
+            SetAnimation(BugState.Idle);
     }
     void LateUpdate(){
         if(monsterSystem.viewRange.isFollow == true){
+            SetAnimation(BugState.Move, true);
             monsterSystem.MonsterChasing();
 
         }
         if(GamePlaySetting.IsDead == true){
-            SetAnimation(FlyingMaskState.Die, false);
+            SetAnimation(BugState.Die, false);
             monsterSystem.viewRange.isFollow = false;
 
         } 
     }
 }
-public class FlyingMaskState{
-    public const string Idle = "animation";
-    public const string Attack = "animation2";
-    public const string Die = "animation3";
+public class BugState
+{
+    public const string Move = "di chuyen";
+    public const string Idle = "tho";
+    public const string Die = "hit";
+    public const string Attack = "skill";
 }

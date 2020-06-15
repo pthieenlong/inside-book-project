@@ -222,9 +222,9 @@ MonoBehaviour:
   speed: 0.125
   moveLength: 3
   followSpeed: 1
-  coolDownTime: 1.5
+  countDownTime: 0
   isAttack: 0
-  isLoopMove: 0
+  isLoopMove: 1
 --- !u!1 &3675312561202236604
 GameObject:
   m_ObjectHideFlags: 0
