@@ -58,7 +58,7 @@ public class MonsterSystem : MonoBehaviour
             if(this.transform.position.x == endPos){
                 this.transform.localScale = facingLeft;
             } 
-            if(this.transform.position.x == startPos){
+            if(this.transform.position.x >= startPos){
                 this.transform.localScale = facingRight;
             }
         }
@@ -66,7 +66,7 @@ public class MonsterSystem : MonoBehaviour
             if(this.transform.position.x == startPos){
                 this.transform.localScale = facingLeft;
             }
-            if(this.transform.position.x == endPos){
+            if(this.transform.position.x >= endPos){
                 this.transform.localScale = facingRight;
             }
         }
