@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ViewRange : MonoBehaviour
+public class BodyRange : MonoBehaviour
 {
-    public bool isFollow;
+    public bool isAttack;
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.transform.CompareTag("Player")){
-            isFollow = true;
+            isAttack = true;
+            Debug.Log("it's attack");
         }
-    }
-    void OnTriggerExit2D(Collider2D collider){
-        isFollow = false;
     }
 }
