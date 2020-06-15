@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: f85aee36ba8fc4349a6cb1e93ed41a1c, type: 2}
+  skeletonDataAsset: {fileID: 0}
   initialSkinName: default
   initialFlipX: 0
   initialFlipY: 0
@@ -6885,7 +6885,7 @@ SpriteRenderer:
   m_Size: {x: 76.829735, y: 32.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7219479005754553742
@@ -7569,11 +7569,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9107184476453827732, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9107184476453827732, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -7629,6 +7624,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+--- !u!4 &1897007066632642363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9107184476453827732, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7219479006032178095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7219479005947002410 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 489444741, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
@@ -7653,9 +7654,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1897007066632642363 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9107184476453827732, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7219479006032178095}
-  m_PrefabAsset: {fileID: 0}

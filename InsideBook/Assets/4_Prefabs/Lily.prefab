@@ -5181,7 +5181,6 @@ MonoBehaviour:
   ModelObj: {fileID: 8375651076362335179}
   speed: 5
   jumpForce: 10
-  isMonster: 0
   dashVector: {x: 0, y: 0}
   DashFX: {fileID: 2827994436458513601}
   SplashFx: {fileID: 0}

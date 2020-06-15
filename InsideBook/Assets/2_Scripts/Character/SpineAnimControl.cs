@@ -12,7 +12,7 @@ public class SpineAnimControl : MonoBehaviour
     {
         if (currentState != animName)
         {
-            Anim.state.SetAnimation(0, animName, isLoop).TimeScale = timeScale;
+            Anim.state.SetAnimation(0,animName, isLoop).TimeScale = timeScale;
             currentState = animName;
         }
     }

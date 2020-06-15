@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlyingMaskController : SpineAnimControl
+public class SoulBatControl : SpineAnimControl
 {
     public MonsterSystem monsterSystem;
     void Start()
     {
-        SetAnimation(FlyingMaskState.Idle, true);
+        SetAnimation(SoulBatState.Idle, true);
     }
     void Update(){
         monsterSystem.LookAtPlayer();
         monsterSystem.MonsterLoopMove();
-        monsterSystem.MonsterAttack(FlyingMaskState.Attack, false);
+        monsterSystem.MonsterAttack(SoulBatState.Attack, false);
         if(monsterSystem.isAttack == false){
-            SetAnimation(FlyingMaskState.Idle);
+            SetAnimation(SoulBatState.Idle);
         }
     }
     void LateUpdate(){
@@ -27,8 +27,9 @@ public class FlyingMaskController : SpineAnimControl
         } 
     }
 }
-public class FlyingMaskState{
-    public const string Idle = "animation";
-    public const string Attack = "animation2";
-    public const string Die = "animation3";
+public class SoulBatState{
+    public const string Idle = "tho";
+    public const string Attack = "skill";
+    public const string Die = "die";
 }
+
