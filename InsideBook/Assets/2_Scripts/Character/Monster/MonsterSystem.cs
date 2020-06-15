@@ -11,9 +11,8 @@ public class MonsterSystem : MonoBehaviour
     public float moveLength;
     public float followSpeed;
     public float coolDownTime;
-    public float attackDistance;
     public bool isAttack = false;
-    SpineAnimControl Anim;
+    public bool isLoopMove = false;
     float timeTemp;
     Vector3 facingLeft = new Vector3(-1,1,1);
     Vector3 facingRight = new Vector3(1,1,1);
@@ -42,10 +41,13 @@ public class MonsterSystem : MonoBehaviour
         
 #region Moving And Facing
     public void MonsterLoopMove(){
-        if(viewRange.isFollow == false)
-        transform.position = new Vector2(Mathf.PingPong(Time.time, moveLength), transform.position.y);
+        if(viewRange.isFollow == false){
+            isLoopMove = true;
+            transform.position = new Vector2(Mathf.PingPong(Time.time, moveLength), transform.position.y);
+        }
     }
     public void MonsterChasing(){
+        isLoopMove = false;
         transform.position = Vector3.Lerp(transform.position, target.transform.position, followSpeed * Time.deltaTime);
     }
     public void LookAtPlayer(){
@@ -56,23 +58,19 @@ public class MonsterSystem : MonoBehaviour
     #endregion Moving And Facing
 
     #region Attack
-    public void MonsterAttack(string state, bool isLoop){
+    public void MonsterAttack(){
         if(attackRange.isOnAttackRange == true && isAttack == false) {
-            Anim.SetAnimation(state,isLoop);
             isAttack = true;
         }
             AttackCooldown();
     }
     public void AttackCooldown(){
         coolDownTime -= Time.deltaTime;
-        Debug.Log(coolDownTime);
         if(coolDownTime <= 0){
-            Debug.Log("end");
             EndAttack();
         }
     }
     public void EndAttack(){
-        Debug.Log("on end");
         isAttack = false;
         //Anim.SetAnimation(state,isLoop);
         coolDownTime = timeTemp;

@@ -11,19 +11,26 @@ public class FlyingMaskController : SpineAnimControl
     }
     void Update(){
         monsterSystem.LookAtPlayer();
-        monsterSystem.MonsterLoopMove();
-        monsterSystem.MonsterAttack(FlyingMaskState.Attack, false);
+        if(monsterSystem.isLoopMove){
+            monsterSystem.MonsterLoopMove();
+        }
+        monsterSystem.MonsterAttack();
+        if(monsterSystem.isAttack == true){
+            SetAnimation(FlyingMaskState.Attack);
+        }
         if(monsterSystem.isAttack == false){
             SetAnimation(FlyingMaskState.Idle);
         }
     }
     void LateUpdate(){
         if(monsterSystem.viewRange.isFollow == true){
-            //transform.LookAt(target.transform);
             monsterSystem.MonsterChasing();
+
         }
         if(GamePlaySetting.IsDead == true){
+            SetAnimation(FlyingMaskState.Die, false);
             monsterSystem.viewRange.isFollow = false;
+
         } 
     }
 }

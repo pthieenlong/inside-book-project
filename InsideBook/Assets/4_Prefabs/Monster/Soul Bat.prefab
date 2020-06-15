@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3105859342296954702}
   - component: {fileID: 4103448135034628673}
+  - component: {fileID: 2604435647565730008}
   m_Layer: 0
   m_Name: Soul Bat
   m_TagString: Dead
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062310567818827196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.745393}
+  m_LocalPosition: {x: 7.32, y: 2.1, z: -8.745393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 843865667990439951}
@@ -45,15 +46,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624df770e74a24ac6a7d515d571f3ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 9107184476453827728, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+  target: {fileID: 0}
   viewRange: {fileID: 4929608122896707774}
   attackRange: {fileID: 7002625445760631373}
   speed: 2
   moveLength: 1
   followSpeed: 1
-  coolDownTime: 0
-  attackDistance: 0
+  coolDownTime: 1.5
   isAttack: 0
+  isLoopMove: 0
+--- !u!114 &2604435647565730008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062310567818827196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0558e6ee1694309b12b4524d556c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 5108168997471669716}
+  currentState: 
+  monsterSystem: {fileID: 4103448135034628673}
 --- !u!1 &2584841325426271137
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +112,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.25, y: -1.25}
@@ -315,7 +331,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.19311309, y: -1.2276473}
@@ -365,8 +381,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1780166, y: -0.41961026}
-  m_Size: {x: 0.957757, y: 2.7547355}
+  m_Offset: {x: 0.17801666, y: -0.2490251}
+  m_Size: {x: 0.9008951, y: 2.2145486}
   m_Direction: 0
 --- !u!1 &8544958472987231972
 GameObject:

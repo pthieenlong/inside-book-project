@@ -2,42 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoulBatControl : SpineAnimControl
+public class BugMonster : SpineAnimControl
 {
     public MonsterSystem monsterSystem;
     void Start(){
-        SetAnimation(SoulBatState.Idle,true);
+        SetAnimation(BugState.Idle,true);
     }
     void Update(){
-        if(monsterSystem.isAttack == false){
-            SetAnimation(SoulBatState.Idle, true);
-        }
-        
+        monsterSystem.LookAtPlayer();
         if(monsterSystem.isLoopMove){
             monsterSystem.MonsterLoopMove();
         }
         monsterSystem.MonsterAttack();
         if(monsterSystem.isAttack == true){
-            SetAnimation(SoulBatState.Attack, false);
+            SetAnimation(BugState.Attack);
         }
-        
+        if(monsterSystem.isAttack == false && monsterSystem.viewRange.isFollow){
+            SetAnimation(BugState.Move);
+        } else 
+            SetAnimation(BugState.Idle);
     }
     void LateUpdate(){
-        monsterSystem.LookAtPlayer();
         if(monsterSystem.viewRange.isFollow == true){
+            SetAnimation(BugState.Move, true);
             monsterSystem.MonsterChasing();
 
         }
         if(GamePlaySetting.IsDead == true){
-            SetAnimation(SoulBatState.Die, false);
+            SetAnimation(BugState.Die, false);
             monsterSystem.viewRange.isFollow = false;
 
         } 
     }
 }
-public class SoulBatState{
+public class BugState
+{
+    public const string Move = "di chuyen";
     public const string Idle = "tho";
+    public const string Die = "hit";
     public const string Attack = "skill";
-    public const string Die = "die";
 }
-
