@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3105859342296954702}
-  - component: {fileID: 4103448135034628673}
   - component: {fileID: 2604435647565730008}
+  - component: {fileID: 8211609296489736296}
+  - component: {fileID: 412076099267579825}
   m_Layer: 0
   m_Name: Soul Bat
   m_TagString: Dead
@@ -34,27 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4103448135034628673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062310567818827196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 624df770e74a24ac6a7d515d571f3ab3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  viewRange: {fileID: 4929608122896707774}
-  attackRange: {fileID: 7002625445760631373}
-  speed: 2
-  moveLength: 1
-  followSpeed: 1
-  countDownTime: 0
-  isAttack: 0
-  isLoopMove: 1
 --- !u!114 &2604435647565730008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,9 +47,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0558e6ee1694309b12b4524d556c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AnimSoul: {fileID: 412076099267579825}
+  moveControl: {fileID: 8211609296489736296}
+  attackRange: {fileID: 7002625445760631373}
+  countDownTime: 1
+  isAttack: 0
+--- !u!114 &8211609296489736296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062310567818827196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c52a9b25d80f4daaa63d93213caf7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 9107184476453827728, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+  viewRange: {fileID: 4929608122896707774}
+  speed: 0.125
+  endPos: 0
+  followSpeed: 0.125
+  isLoopMove: 1
+--- !u!114 &412076099267579825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062310567818827196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee413d7cc74d140658b8b1e176a317ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Anim: {fileID: 5108168997471669716}
   currentState: 
-  monsterSystem: {fileID: 4103448135034628673}
 --- !u!1 &2584841325426271137
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc233b4111821442096441f2a00badc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFollow: 0
+  onEnter: 0
 --- !u!1 &3924226990318538135
 GameObject:
   m_ObjectHideFlags: 0

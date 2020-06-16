@@ -5,7 +5,6 @@ using UnityEngine;
 public class AttackRange : MonoBehaviour
 {
     public bool isOnAttackRange;
-    MonsterSystem monsterSystem;
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.transform.CompareTag("Player")){
             isOnAttackRange = true;

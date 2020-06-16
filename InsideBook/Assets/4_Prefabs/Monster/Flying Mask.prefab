@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc233b4111821442096441f2a00badc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFollow: 0
+  onEnter: 0
 --- !u!1 &2050542641597262316
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,8 +164,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3675312560332817892}
-  - component: {fileID: 3675312560332817893}
-  - component: {fileID: 6985127671060716174}
+  - component: {fileID: 770881040398143887}
+  - component: {fileID: 7799915326073444225}
+  - component: {fileID: 5717186507800291610}
   m_Layer: 0
   m_Name: Flying Mask
   m_TagString: Dead
@@ -189,7 +190,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3675312560332817893
+--- !u!114 &770881040398143887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,33 +199,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 3675312560332817883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0c02d823fd314094be70ba92335fb6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 91b4ed29263254b5fbe0f0c513e0beea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimMask: {fileID: 5717186507800291610}
+  moveControl: {fileID: 7799915326073444225}
+  attackRange: {fileID: 2226182777468496577}
+  countDownTime: 1
+  isAttack: 0
+--- !u!114 &7799915326073444225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675312560332817883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6911da14f0b4bf9bfbdaa366e4aabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 9107184476453827728, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+  viewRange: {fileID: 3459772442253441016}
+  speed: 0.125
+  endPos: 0
+  followSpeed: 0.125
+  isLoopMove: 1
+--- !u!114 &5717186507800291610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675312560332817883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 012729e1a67ca4ff79f2d9e1099e0a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Anim: {fileID: 3675312561202236605}
-  currentState: animation
-  monsterSystem: {fileID: 0}
---- !u!114 &6985127671060716174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3675312560332817883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 624df770e74a24ac6a7d515d571f3ab3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  viewRange: {fileID: 3459772442253441016}
-  attackRange: {fileID: 2226182777468496577}
-  speed: 0.125
-  moveLength: 3
-  followSpeed: 1
-  countDownTime: 0
-  isAttack: 0
-  isLoopMove: 1
+  currentState: 
 --- !u!1 &3675312561202236604
 GameObject:
   m_ObjectHideFlags: 0
