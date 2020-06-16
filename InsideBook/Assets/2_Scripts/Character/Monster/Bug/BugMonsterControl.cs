@@ -57,7 +57,12 @@ public class BugMonsterControl : MonoBehaviour, IMonsterControl
     }
     #endregion Attack
     public void GetHit(){
+        Debug.Log("a");
         AnimBug.SetAnimation(BugState.Die);
+        OnDead();
+    }
+    public void OnDead(){
+        this.transform.gameObject.SetActive(false);
     }
     // public MonsterSystem monsterSystem;
     // float startPos;

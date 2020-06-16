@@ -6,6 +6,7 @@ public class AttackCollider : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("other.transform:" + other.transform.tag);
         if(this.transform.CompareTag("PlayerAttack") && other.transform.CompareTag("Monster"))
         {
             other.GetComponent<IMonsterControl>().GetHit();

@@ -15,6 +15,9 @@ public class LilyMoveControl : MoveControl
     public int dashCount = 1;
     public bool isDashing = false;
 
+    public GameObject AttackCollider;
+
+    public bool canDead = true;
     float gravityScale = 6f;
     float currentScale = 0.15f;
     float scaleTime = 0.2f;
@@ -32,6 +35,8 @@ public class LilyMoveControl : MoveControl
     #region Dashing Skill
     public void StartDash()
     {
+        AttackCollider.SetActive(true);
+        canDead = false;
         dashCount--;
         timeCount = 0;
         currentScale = ModelObj.transform.parent.localScale.z;
@@ -63,6 +68,8 @@ public class LilyMoveControl : MoveControl
     }
     public void EndDash()
     {
+        AttackCollider.SetActive(false);
+        canDead = true;
         isDashing = false;
         _Object.velocity = Vector3.zero;
         UIJoystick.Instance.OnPointerUp();

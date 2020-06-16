@@ -8021,6 +8021,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6893168807068529864, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerAttack
+      objectReference: {fileID: 0}
     - target: {fileID: 7334532747275869181, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
         type: 3}
       propertyPath: SplashFx
@@ -8088,6 +8093,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f366403edeb8d04db9d0b3fa24ca80b, type: 3}
+--- !u!4 &1897007066632642363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9107184476453827732, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7219479006032178095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7219479005947002410 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 489444741, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
@@ -8100,9 +8111,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c7f3d36a1810a4c9797d5697778951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1897007066632642363 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9107184476453827732, guid: 5f366403edeb8d04db9d0b3fa24ca80b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7219479006032178095}
-  m_PrefabAsset: {fileID: 0}

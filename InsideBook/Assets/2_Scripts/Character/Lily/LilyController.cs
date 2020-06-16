@@ -186,7 +186,7 @@ public class LilyController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.transform.CompareTag("Dead"))
+        if (moveController.canDead && other.transform.CompareTag("Dead"))
         {
             OnDead();
         }
