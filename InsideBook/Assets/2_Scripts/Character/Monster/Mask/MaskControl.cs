@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaskControl : MonoBehaviour
+public class MaskControl : MonoBehaviour, IMonsterControl
 {
     #region Fields
     public MaskAnimControl AnimMask;
@@ -56,4 +56,7 @@ public class MaskControl : MonoBehaviour
      countDownTime = timeTemp;
     }
     #endregion Attack
+    public void GetHit(){
+        AnimMask.SetAnimation(MaskState.Die,false);
+    }
 }

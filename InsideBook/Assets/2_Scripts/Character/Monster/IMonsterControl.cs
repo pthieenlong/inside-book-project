@@ -1,4 +1,4 @@
 ﻿public interface IMonsterControl
 {
-   //public void GetHit();
+    void GetHit();
 }

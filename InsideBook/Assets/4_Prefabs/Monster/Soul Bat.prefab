@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 412076099267579825}
   m_Layer: 0
   m_Name: Soul Bat
-  m_TagString: Dead
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlameMonsterControl : MonoBehaviour
+public class FlameMonsterControl : MonoBehaviour, IMonsterControl
 {
     #region Fields
     public FlameMonsterAnimControl AnimFlame;
@@ -46,6 +46,9 @@ public class FlameMonsterControl : MonoBehaviour
      countDownTime = timeTemp;
     }
     #endregion Attack
+    public void GetHit(){
+        AnimFlame.SetAnimation(FlameState.Die,false);
+    }
 }
 
 

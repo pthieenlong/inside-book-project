@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BugMonsterControl : MonoBehaviour
+public class BugMonsterControl : MonoBehaviour, IMonsterControl
 {
     #region Fields
     public BugMonsterAnimControl AnimBug;
@@ -56,7 +56,9 @@ public class BugMonsterControl : MonoBehaviour
      countDownTime = timeTemp;
     }
     #endregion Attack
-
+    public void GetHit(){
+        AnimBug.SetAnimation(BugState.Die);
+    }
     // public MonsterSystem monsterSystem;
     // float startPos;
     // void Start(){

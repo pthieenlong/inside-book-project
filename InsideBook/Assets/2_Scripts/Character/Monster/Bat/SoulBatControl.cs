@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoulBatControl : MonoBehaviour
+public class SoulBatControl : MonoBehaviour, IMonsterControl
 {
     #region Fields
     public SoulBatAnimControl AnimSoul;
@@ -53,6 +53,9 @@ public class SoulBatControl : MonoBehaviour
      countDownTime = timeTemp;
     }
     #endregion Attack
+    public void GetHit(){
+        AnimSoul.SetAnimation(SoulBatState.Die,false);
+    }
 }
 
 
