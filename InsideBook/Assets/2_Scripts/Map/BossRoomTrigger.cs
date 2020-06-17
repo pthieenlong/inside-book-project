@@ -16,6 +16,19 @@ public class BossRoomTrigger : MonoBehaviour
 
     [Header("Other")]
     public GameObject RockPillar;
+
+    void Start()
+    {
+        GamePlaySetting.OnRespawn -= Respawn;
+        GamePlaySetting.OnRespawn += Respawn;
+    }
+
+    void Respawn()
+    {
+        RockPillar.gameObject.SetActive(false);
+        TheGhost.Init();
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.transform.CompareTag("Player"))
@@ -32,12 +45,12 @@ public class BossRoomTrigger : MonoBehaviour
             DOVirtual.DelayedCall(tweenTime / 3, () =>
             {
                 UIJoystick.Instance.OnPointerUp();
+                RockPillar.gameObject.SetActive(true);
             });
 
             // boss raise
             DOVirtual.DelayedCall(tweenTime + 2, () =>
             {
-                RockPillar.gameObject.SetActive(true);
                 TheGhost.Raise();
                 UIControl.Instance.ShowUI();
                 Lily.canControl = true;

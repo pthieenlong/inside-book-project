@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class LilyController : MonoBehaviour
 {
@@ -13,10 +14,13 @@ public class LilyController : MonoBehaviour
 
     void Update()
     {
-        if (canControl && moveController.canMove && !GamePlaySetting.IsDead)
-            PlayerCharacterControl();
+        if (!GamePlaySetting.IsDead)
+        {
+            if (canControl && moveController.canMove)
+                PlayerCharacterControl();
 
-        ApplyMovement();
+            ApplyMovement();
+        }
     }
     public void PlayerCharacterControl()
     {
@@ -80,13 +84,13 @@ public class LilyController : MonoBehaviour
             {
                 moveController.MovingRight();
                 if (!AnimLily.isJumping && IsGrounded())
-                    AnimLily.SetAnimation(LilyState.Move);
+                    AnimLily.SetAnimation(LilyState.Move, true, 1.2f);
             }
             else if (moveDirection < 0) // Left
             {
                 moveController.MovingLeft();
                 if (!AnimLily.isJumping && IsGrounded())
-                    AnimLily.SetAnimation(LilyState.Move, true);
+                    AnimLily.SetAnimation(LilyState.Move, true, 1.2f);
             }
             else
             {
@@ -106,7 +110,7 @@ public class LilyController : MonoBehaviour
     public void AutoMoveTo(Vector3 des, float duration)
     {
         moveDirection = 0;
-        AnimLily.SetAnimation(LilyState.Move);
+        AnimLily.SetAnimation(LilyState.Move, true, 1.2f);
         float direction = (des - moveController._Object.transform.position).x;
         bool isLeft = direction / Mathf.Abs(direction) < 0;
         moveController.AutoMoveByTime(isLeft, Mathf.Abs(direction) / duration, duration);
@@ -166,8 +170,8 @@ public class LilyController : MonoBehaviour
     {
         canControl = false;
         GamePlaySetting.IsDead = true;
-        moveController._Object.isKinematic = true;
         moveController._Object.velocity = Vector3.zero;
+        moveController._Object.isKinematic = true;
         moveDirection = 0;
         AnimLily.SetAnimation(LilyState.Dead, false);
         Invoke("OnReSpawn", 2);
@@ -175,20 +179,28 @@ public class LilyController : MonoBehaviour
 
     public void OnReSpawn()
     {
+        if (GamePlaySetting.OnRespawn != null)
+            GamePlaySetting.OnRespawn();
+
+        CameraSetting.Instance.SwitchToNormalState(5f);
         canControl = true;
         GamePlaySetting.IsDead = false;
         moveController._Object.isKinematic = false;
         moveDirection = 0;
         this.transform.position = GamePlaySetting.CurrentCheckPoint.transform.position;
-        CameraSetting.Instance.SwitchToNormalState(5f);
+        Debug.Log("OnReSpawn");
+        // DOVirtual.DelayedCall(1, () =>
+        // {
 
+        // });
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (moveController.canDead && other.transform.CompareTag("Dead"))
         {
-            OnDead();
+            if (!GamePlaySetting.IsDead)
+                OnDead();
         }
     }
 

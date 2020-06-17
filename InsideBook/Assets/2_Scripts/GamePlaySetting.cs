@@ -1,11 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class GamePlaySetting
 {
     public static int BaseDashCount = 1;
-    public static bool IsDead = false;
+
+    public static Action OnDead;
+    public static Action OnRespawn;
+    static bool isDead = false;
+    public static bool IsDead
+    {
+        get { return isDead; }
+        set
+        {
+            isDead = value;
+            if (OnDead != null)
+                OnDead();
+        }
+    }
     public static Checkpoint CurrentCheckPoint;
 
     #region Save Game
