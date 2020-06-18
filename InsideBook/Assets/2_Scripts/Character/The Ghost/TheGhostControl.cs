@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class TheGhostControl : MonoBehaviour
+public class TheGhostControl : MonsterController
 {
-    public Transform target;
-    public TheGhostMoveControl moveController;
-    public TheGhostAnimControl AnimTheGhost;
+    public TheGhostMoveControl MoveController;
+    public TheGhostAnimControl AnimControl;
     [Header("Colliders")]
     public GameObject C_Body;
     public GameObject C_Weakpoint;
@@ -24,37 +23,53 @@ public class TheGhostControl : MonoBehaviour
     public Transform Left;
     public Transform Right;
 
-    Coroutine AttactRoutine;
+    Coroutine AttackRoutine;
+    Vector3 tempPosition = Vector3.zero;
 
     public void Init()
     {
+        ResetTween();
+        AnimControl.SetAnimation(TheGhostState.Idle);
+        MoveController.SetDirection(true);
+        MoveController.TeleportTo(GroundLevel_Mid);
+        ResetCollider();
+    }
+    public void ResetTween()
+    {
         this.DOKill(true);
-        moveController.DOKill(true);
-        if (AttactRoutine != null)
-            StopCoroutine(AttactRoutine);
-
-        AnimTheGhost.SetAnimation(TheGhostState.Idle);
-        moveController.SetDirection(true);
-        moveController.TeleportTo(GroundLevel_Mid);
-        SetActiveWeakPoint(false);
+        MoveController.DOKill(true);
+        MoveController.moveObj.DOKill(true);
+        this.StopAllCoroutines();
+    }
+    public void ResetCollider()
+    {
+        C_Body.SetActive(false);
+        C_Weakpoint.SetActive(false);
         C_Atk1.SetActive(false);
         C_Atk2.SetActive(false);
         C_Atk3.SetActive(false);
     }
+    public void SetActiveWeakPoint(bool isActive)
+    {
+        C_Body.SetActive(!isActive);
+        C_Weakpoint.SetActive(isActive);
+    }
 
+    //========= Action =========
     float raiseTime = 1.833f;
     public void Raise()
     {
-        AnimTheGhost.SetAnimation(TheGhostState.Raise, false);
+        AnimControl.SetAnimation(TheGhostState.Raise, false);
         DOVirtual.DelayedCall(raiseTime, () =>
         {
-            AnimTheGhost.SetAnimation(TheGhostState.Idle2);
+            AnimControl.SetAnimation(TheGhostState.Idle2);
             DOVirtual.DelayedCall(prepareTime, () =>
             {
-                AttactRoutine = StartCoroutine(AttackRoute());
+                AttackRoutine = StartCoroutine(AttackRoute());
             });
         });
     }
+
 
     float prepareTime = 1;
     float atk_speed2 = 1.667f;
@@ -65,130 +80,134 @@ public class TheGhostControl : MonoBehaviour
     {
         while (true)
         {
-            AnimTheGhost.SetAnimation(TheGhostState.Idle2);
+            AnimControl.SetAnimation(TheGhostState.Idle2);
             waitTime = 0.5f;
             tempPosition = Top.position;
             tempPosition.x = this.transform.position.x;
-            moveController.MoveTo(tempPosition, waitTime);
-            moveController.LookAt(target);
+            MoveController.MoveTo(tempPosition, waitTime);
+            MoveController.LookAt(target);
             yield return new WaitForSeconds(prepareTime + waitTime);
             //=== Attack 1
-            AnimTheGhost.SetAnimation(TheGhostState.Idle2);
-            tempPosition = Top.position;
-            tempPosition.x = GroundLevel_Left.position.x;
-            moveController.TeleportTo(tempPosition);
-            moveController.MoveTo(GroundLevel_Left, waitTime);
-            moveController.LookAt(target);
+            AnimControl.SetAnimation(TheGhostState.Idle2);
+            MoveController.MoveToAttack1(Top, GroundLevel_Left, target, waitTime);
+            SetActiveWeakPoint(false);
             yield return new WaitForSeconds(waitTime);
 
-            AnimTheGhost.SetAnimation(TheGhostState.Attack1, false);
+            AnimControl.SetAnimation(TheGhostState.Attack1, false);
             C_Atk1.SetActive(true);
             yield return new WaitForSeconds(atk_speed2);
 
             //=== Attack 2
-            AnimTheGhost.SetAnimation(TheGhostState.Attack2);
+            AnimControl.SetAnimation(TheGhostState.Attack2);
             C_Atk2.SetActive(true);
-            DashAttackByHeight(GroundLevel_Left, Right, GroundLevel_Mid, atk_speed2);
-            moveController.LookAt(target);
+            MoveController.DashAttackByHeight(GroundLevel_Left, Right, GroundLevel_Mid, atk_speed2);
+            MoveController.LookAt(target);
             yield return new WaitForSeconds(atk_speed2);
 
             //=== Attack 1
-            AnimTheGhost.SetAnimation(TheGhostState.Idle2);
-            tempPosition = Top.position;
-            tempPosition.x = GroundLevel_Right.position.x;
-            moveController.TeleportTo(tempPosition);
-            moveController.MoveTo(GroundLevel_Right, waitTime);
-            moveController.LookAt(target);
+            AnimControl.SetAnimation(TheGhostState.Idle2);
+            MoveController.MoveToAttack1(Top, GroundLevel_Right, target, waitTime);
             yield return new WaitForSeconds(waitTime);
 
-            AnimTheGhost.SetAnimation(TheGhostState.Attack1, false);
+            AnimControl.SetAnimation(TheGhostState.Attack1, false);
             C_Atk1.SetActive(true);
             yield return new WaitForSeconds(atk_speed2);
 
             //=== Attack 2
-            AnimTheGhost.SetAnimation(TheGhostState.Attack2);
+            AnimControl.SetAnimation(TheGhostState.Attack2);
             C_Atk2.SetActive(true);
-            DashAttackByHeight(GroundLevel_Right, Left, GroundLevel_Mid, atk_speed2);
-            moveController.LookAt(target);
+            MoveController.DashAttackByHeight(GroundLevel_Right, Left, GroundLevel_Mid, atk_speed2);
+            MoveController.LookAt(target);
             yield return new WaitForSeconds(atk_speed2);
 
             //=== Attack 2
-            AnimTheGhost.SetAnimation(TheGhostState.Attack2);
+            AnimControl.SetAnimation(TheGhostState.Attack2);
             C_Atk2.SetActive(true);
             tempPosition.x = Left.position.x;
             tempPosition.y = GroundLevel_Mid.position.y;
-            DashAttack(Right.position, tempPosition, atk_speed2);
-            moveController.LookAt(target);
+            MoveController.DashAttack(Right.position, tempPosition, atk_speed2);
+            MoveController.LookAt(target);
             yield return new WaitForSeconds(atk_speed2);
 
             //=== Attack 2
-            AnimTheGhost.SetAnimation(TheGhostState.Attack2);
+            AnimControl.SetAnimation(TheGhostState.Attack2);
             C_Atk2.SetActive(true);
             tempPosition.x = Right.position.x;
             tempPosition.y = GroundLevel_Mid.position.y;
-            DashAttack(Left.position, tempPosition, atk_speed2);
-            moveController.LookAt(target);
+            MoveController.DashAttack(Left.position, tempPosition, atk_speed2);
+            MoveController.LookAt(target);
             yield return new WaitForSeconds(atk_speed2);
 
             //=== Attack 3
-            AnimTheGhost.SetAnimation(TheGhostState.Power, false);
-            moveController.LookAt(target);
-
-            tempPosition.y = Top.position.y;
-            if (moveController.moveObj.localScale.x < 0)
-            {
-                tempPosition.x = GroundLevel_Right.position.x;
-                moveController.Move(tempPosition, GroundLevel_Right.position, waitTime);
-            }
+            AnimControl.SetAnimation(TheGhostState.Power, false);
+            MoveController.TeleportTo(Top);
+            MoveController.LookAt(target);
+            if (MoveController.moveObj.localScale.x < 0)
+                MoveController.MoveToAttack3(Top, GroundLevel_Right, waitTime);
             else
-            {
-                tempPosition.x = GroundLevel_Left.position.x;
-                moveController.Move(tempPosition, GroundLevel_Left.position, waitTime);
-            }
+                MoveController.MoveToAttack3(Top, GroundLevel_Left, waitTime);
             yield return new WaitForSeconds(waitTime);
 
-            AnimTheGhost.SetAnimation(TheGhostState.Attack3, false);
+            AnimControl.SetAnimation(TheGhostState.Attack3, false);
             C_Atk3.SetActive(true);
             yield return new WaitForSeconds(atk_speed3);
 
             //=== Tired
-            AnimTheGhost.SetAnimation(TheGhostState.Tired);
+            AnimControl.SetAnimation(TheGhostState.Tired);
             SetActiveWeakPoint(true);
 
             yield return new WaitForSeconds(tired_time);
-            SetActiveWeakPoint(false);
-            moveController.LookAt(target);
+            MoveController.LookAt(target);
         }
     }
 
-    public void SetActiveWeakPoint(bool isActive)
+    IEnumerator GetHitRoute()
     {
-        C_Body.SetActive(!isActive);
-        C_Weakpoint.SetActive(isActive);
+        AnimControl.SetAnimation(TheGhostState.GetHit, false);
+        ResetCollider();
+        yield return new WaitForSeconds(1.333f);
+
+        if (HP > 0)
+        {
+            AnimControl.SetAnimation(TheGhostState.Idle2);
+            AttackRoutine = StartCoroutine(AttackRoute());
+        }
+        else
+        {
+            StartCoroutine(DeadRoute());
+        }
+        yield break;
+
     }
 
-    Vector3 tempPosition = Vector3.zero;
-    public void DashAttackByHeight(Vector3 from, Vector3 to, Vector3 height, float atk_spd)
+    IEnumerator DeadRoute()
     {
-        tempPosition.y = height.y;
+        AnimControl.SetAnimation(TheGhostState.Tired);
+        MoveController.MoveTo(GroundLevel_Mid, 3);
+        yield return new WaitForSeconds(3);
 
-        tempPosition.x = from.x;
-        moveController.TeleportTo(tempPosition);
-        tempPosition.x = to.x;
-        moveController.MoveTo(tempPosition, atk_spd);
-    }
-    public void DashAttackByHeight(Transform from, Transform to, Transform height, float atk_spd)
-    {
-        DashAttackByHeight(from.position, to.position, height.position, atk_spd);
+        AnimControl.SetAnimation(TheGhostState.Die, false);
+        yield return new WaitForSeconds(3.5f);
     }
 
-    public void DashAttack(Vector3 from, Vector3 to, float atk_spd)
+    public override void OnDead()
     {
-        moveController.TeleportTo(from);
-        moveController.MoveTo(to, atk_spd);
+        base.OnDead();
+        if (AttackRoutine != null)
+        {
+            StopCoroutine(AttackRoutine);
+        }
     }
-    public void DashAttack(Transform from, Transform to, float atk_spd)
+
+    #region Interface Monster Control
+    public override void GetHit(int dmg)
     {
-        DashAttack(from.position, to.position, atk_spd);
+        base.GetHit(dmg);
+        if (AttackRoutine != null)
+        {
+            StopCoroutine(AttackRoutine);
+        }
+        StartCoroutine(GetHitRoute());
     }
+    #endregion Interface Monster Control
 }

@@ -49,6 +49,7 @@ public class BossRoomTrigger : MonoBehaviour
             });
 
             // boss raise
+            TheGhost.MoveController.TeleportTo(TheGhost.GroundLevel_Mid);
             DOVirtual.DelayedCall(tweenTime + 2, () =>
             {
                 TheGhost.Raise();

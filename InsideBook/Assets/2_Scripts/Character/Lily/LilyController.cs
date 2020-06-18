@@ -174,25 +174,30 @@ public class LilyController : MonoBehaviour
         moveController._Object.isKinematic = true;
         moveDirection = 0;
         AnimLily.SetAnimation(LilyState.Dead, false);
+        Invoke("FadeOut", 1.1f);
         Invoke("OnReSpawn", 2);
+    }
+
+    void FadeOut()
+    {
+        UIControl.Instance.FadeOut();
     }
 
     public void OnReSpawn()
     {
-        if (GamePlaySetting.OnRespawn != null)
-            GamePlaySetting.OnRespawn();
 
         CameraSetting.Instance.SwitchToNormalState(5f);
+        UIControl.Instance.FadeIn();
         canControl = true;
         GamePlaySetting.IsDead = false;
         moveController._Object.isKinematic = false;
+        moveController._Object.velocity = Vector3.zero;
         moveDirection = 0;
+        UIJoystick.Instance.OnPointerUp();
         this.transform.position = GamePlaySetting.CurrentCheckPoint.transform.position;
-        Debug.Log("OnReSpawn");
-        // DOVirtual.DelayedCall(1, () =>
-        // {
 
-        // });
+        if (GamePlaySetting.OnRespawn != null)
+            GamePlaySetting.OnRespawn();
     }
 
     void OnTriggerEnter2D(Collider2D other)

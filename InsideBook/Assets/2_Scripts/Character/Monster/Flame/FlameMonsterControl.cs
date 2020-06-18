@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlameMonsterControl : MonoBehaviour, IMonsterControl
+public class FlameMonsterControl : MonsterController, IMonsterControl
 {
     #region Fields
     public FlameMonsterAnimControl AnimFlame;
@@ -14,40 +14,49 @@ public class FlameMonsterControl : MonoBehaviour, IMonsterControl
     Vector3 StartPosition;
     #endregion Fields
 
-    void Start(){
+    void Start()
+    {
         StartPosition = this.transform.position;
         AnimFlame.SetAnimation(FlameState.Idle, true);
-        
+
     }
-    void Update(){
+    void Update()
+    {
     }
     #region Moving
-    
+
 
     #endregion Moving
 
     #region Attack
-    public void MonsterAttack(){
-        if(attackRange.isOnAttackRange == true && isAttack == false) {
-            AnimFlame.SetAnimation(FlameState.Attack,false);
+    public void MonsterAttack()
+    {
+        if (attackRange.isOnAttackRange == true && isAttack == false)
+        {
+            AnimFlame.SetAnimation(FlameState.Attack, false);
             isAttack = true;
         }
-            AttackCooldown();
+        AttackCooldown();
     }
-    public void AttackCooldown(){
+    public void AttackCooldown()
+    {
         countDownTime -= Time.deltaTime;
-        if(countDownTime <= 0){
+        if (countDownTime <= 0)
+        {
             EndAttack();
         }
     }
-    public void EndAttack(){
+    public void EndAttack()
+    {
         isAttack = false;
-        AnimFlame.SetAnimation(FlameState.Idle,true);
-     countDownTime = timeTemp;
+        AnimFlame.SetAnimation(FlameState.Idle, true);
+        countDownTime = timeTemp;
     }
     #endregion Attack
-    public void GetHit(){
-        AnimFlame.SetAnimation(FlameState.Die,false);
+    public override void GetHit(int dmg)
+    {
+        base.GetHit(dmg);
+        AnimFlame.SetAnimation(FlameState.Die, false);
     }
 }
 

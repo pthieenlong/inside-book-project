@@ -460,13 +460,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  moveController: {fileID: 7070680775996290502}
-  AnimTheGhost: {fileID: 6116886828898502369}
-  C_Body: {fileID: 0}
-  C_Weakpoint: {fileID: 0}
-  C_Atk1: {fileID: 0}
-  C_Atk2: {fileID: 0}
-  C_Atk3: {fileID: 0}
+  MoveController: {fileID: 7070680775996290502}
+  AnimControl: {fileID: 6116886828898502369}
+  C_Body: {fileID: 1310411670481953420}
+  C_Weakpoint: {fileID: 1449518271255643290}
+  C_Atk1: {fileID: 39161928216413888}
+  C_Atk2: {fileID: 3122854932705663632}
+  C_Atk3: {fileID: 6148413402854919458}
   GroundLevel_Mid: {fileID: 0}
   GroundLevel_Left: {fileID: 0}
   GroundLevel_Right: {fileID: 0}
@@ -500,4 +500,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299fbbc52b383b44a9acbb81857eff94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveObj: {fileID: 0}
+  moveObj: {fileID: 1723956436192054573}

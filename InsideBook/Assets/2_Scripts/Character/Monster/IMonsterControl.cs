@@ -1,5 +1,6 @@
 ﻿public interface IMonsterControl
 {
-    void GetHit();
-
+    void GetHit(int dmg);
+    void Detect();
+    void Attack();
 }

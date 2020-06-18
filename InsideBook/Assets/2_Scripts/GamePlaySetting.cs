@@ -14,8 +14,11 @@ public class GamePlaySetting
         set
         {
             isDead = value;
-            if (OnDead != null)
-                OnDead();
+            if (isDead)
+            {
+                if (OnDead != null)
+                    OnDead();
+            }
         }
     }
     public static Checkpoint CurrentCheckPoint;

@@ -3,61 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class TheGhostMoveControl : MonoBehaviour
+public class TheGhostMoveControl : MonsterMoveController
 {
-    public Transform moveObj;
-
-    public void MoveTo(Vector3 to, float duration)
+    Vector3 tempPosition = Vector3.zero;
+    public void MoveToAttack1(Transform Top, Transform GroundLevel, Transform target, float waitTime)
     {
-        moveObj.DOMove(to, duration);
+        tempPosition = Top.position;
+        tempPosition.x = GroundLevel.position.x;
+        TeleportTo(tempPosition);
+        MoveTo(GroundLevel, waitTime);
+        LookAt(target);
     }
 
-    public void MoveTo(Transform to, float duration)
+    public void MoveToAttack3(Transform Top, Transform GroundLevel, float waitTime)
     {
-        MoveTo(to.position, duration);
+        tempPosition.y = Top.position.y;
+        tempPosition.x = GroundLevel.position.x;
+        Move(tempPosition, GroundLevel.position, waitTime);
     }
 
-    public void Move(Vector3 from, Vector3 to, float duration)
+    public void DashAttackByHeight(Vector3 from, Vector3 to, Vector3 height, float atk_spd)
     {
-        moveObj.position = from;
-        moveObj.DOMove(to, duration);
+        tempPosition.y = height.y;
+
+        tempPosition.x = from.x;
+        TeleportTo(tempPosition);
+        tempPosition.x = to.x;
+        MoveTo(tempPosition, atk_spd);
+    }
+    public void DashAttackByHeight(Transform from, Transform to, Transform height, float atk_spd)
+    {
+        DashAttackByHeight(from.position, to.position, height.position, atk_spd);
     }
 
-    public void Move(Transform from, Transform to, float duration)
+    public void DashAttack(Vector3 from, Vector3 to, float atk_spd)
     {
-        Move(from.position, to.position, duration);
+        TeleportTo(from);
+        MoveTo(to, atk_spd);
     }
-
-    public void TeleportTo(Vector3 to)
+    public void DashAttack(Transform from, Transform to, float atk_spd)
     {
-        moveObj.position = to;
-    }
-
-    public void TeleportTo(Transform to)
-    {
-        TeleportTo(to.position);
-    }
-
-    public void LookAt(Vector3 target)
-    {
-        float d = target.x - moveObj.position.x;
-        SetDirection(d < 0);
-    }
-    public void LookAt(Transform target)
-    {
-        LookAt(target.position);
-    }
-
-    public void SetDirection(bool isLeft)
-    {
-        if (isLeft)
-            moveObj.localScale = moveObj.localScale.V3SetX(-1);
-        else
-            moveObj.localScale = moveObj.localScale.V3SetX(1);
-    }
-
-    public void StopAction()
-    {
-        moveObj.DOKill();
+        DashAttack(from.position, to.position, atk_spd);
     }
 }

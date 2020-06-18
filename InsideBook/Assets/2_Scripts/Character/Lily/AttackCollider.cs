@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class AttackCollider : MonoBehaviour
 {
+    public int AttackPower = 1;
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("other.transform:" + other.transform.tag);
-        if(this.transform.CompareTag("PlayerAttack") && other.transform.CompareTag("Monster"))
+        // Debug.Log("other.transform:" + other.transform.tag);
+        if (this.transform.CompareTag("PlayerAttack") && other.transform.CompareTag("Monster"))
         {
-            other.GetComponent<IMonsterControl>().GetHit();
+            other.transform.parent.GetComponent<IMonsterControl>().GetHit(AttackPower);
         }
     }
 }

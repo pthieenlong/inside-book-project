@@ -52,13 +52,13 @@ public class LilyMoveControl : MoveControl
             dashVector = UIJoystick.JoystickDirection;
             if (dashVector.x == 0)
                 dashVector.x = _Object.transform.localScale.x;
-            _Object.velocity = (dashVector * dashForce);
+            _Object.velocity = dashVector * dashForce;
             PlaySplashFX();
         });
     }
     public void Dashing()
     {
-        _Object.velocity = Vector2.Lerp(_Object.velocity, Vector2.zero, 0.05f);
+        // _Object.velocity = Vector2.Lerp(_Object.velocity, Vector2.zero, 0.05f);
 
         timeCount += Time.deltaTime;
         if (timeCount >= dashTime)

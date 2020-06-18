@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2604435647565730008}
   - component: {fileID: 8211609296489736296}
   - component: {fileID: 412076099267579825}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Soul Bat
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ Transform:
   m_GameObject: {fileID: 3924226990318538135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 843865667990439951}
   m_RootOrder: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoulBatControl : MonoBehaviour, IMonsterControl
+public class SoulBatControl : MonsterController, IMonsterControl
 {
     #region Fields
     public SoulBatAnimControl AnimSoul;
@@ -14,47 +14,58 @@ public class SoulBatControl : MonoBehaviour, IMonsterControl
     Vector3 StartPosition;
     #endregion Fields
 
-    void Start(){
+    void Start()
+    {
         StartPosition = this.transform.position;
         AnimSoul.SetAnimation(SoulBatState.Idle, true);
-        
-        
+
+
     }
-    void Update(){
+    void Update()
+    {
         Moving();
     }
     #region Moving
-    public void Moving(){
-        if(moveControl.viewRange.onEnter){
+    public void Moving()
+    {
+        if (moveControl.viewRange.onEnter)
+        {
             moveControl.MonsterChasing();
-            AnimSoul.SetAnimation(SoulBatState.Idle,true);
+            AnimSoul.SetAnimation(SoulBatState.Idle, true);
         }
     }
 
     #endregion Moving
 
     #region Attack
-    public void MonsterAttack(){
-        if(attackRange.isOnAttackRange == true && isAttack == false) {
-            AnimSoul.SetAnimation(SoulBatState.Attack,false);
+    public void MonsterAttack()
+    {
+        if (attackRange.isOnAttackRange == true && isAttack == false)
+        {
+            AnimSoul.SetAnimation(SoulBatState.Attack, false);
             isAttack = true;
         }
-            AttackCooldown();
+        AttackCooldown();
     }
-    public void AttackCooldown(){
+    public void AttackCooldown()
+    {
         countDownTime -= Time.deltaTime;
-        if(countDownTime <= 0){
+        if (countDownTime <= 0)
+        {
             EndAttack();
         }
     }
-    public void EndAttack(){
+    public void EndAttack()
+    {
         isAttack = false;
-        AnimSoul.SetAnimation(SoulBatState.Idle,true);
-     countDownTime = timeTemp;
+        AnimSoul.SetAnimation(SoulBatState.Idle, true);
+        countDownTime = timeTemp;
     }
     #endregion Attack
-    public void GetHit(){
-        AnimSoul.SetAnimation(SoulBatState.Die,false);
+    public override void GetHit(int dmg)
+    {
+        base.GetHit(dmg);
+        AnimSoul.SetAnimation(SoulBatState.Die, false);
     }
 }
 

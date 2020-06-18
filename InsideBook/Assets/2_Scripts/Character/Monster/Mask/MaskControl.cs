@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaskControl : MonoBehaviour, IMonsterControl
+public class MaskControl : MonsterController, IMonsterControl
 {
     #region Fields
     public MaskAnimControl AnimMask;
@@ -14,7 +14,8 @@ public class MaskControl : MonoBehaviour, IMonsterControl
     Vector3 StartPosition;
     #endregion Fields
 
-    void Start(){
+    void Start()
+    {
         StartPosition = this.transform.position;
         //AnimMask.SetAnimation(MaskState.Idle, true);
         moveControl.viewRange.onEnter = false;
@@ -23,40 +24,50 @@ public class MaskControl : MonoBehaviour, IMonsterControl
             AnimMask.SetAnimation(MaskState.Idle, true);
         }
     }
-    void Update(){
+    void Update()
+    {
         Moving();
     }
     #region Moving
-    public void Moving(){
-        if(moveControl.viewRange.onEnter){
+    public void Moving()
+    {
+        if (moveControl.viewRange.onEnter)
+        {
             moveControl.MonsterChasing();
-            AnimMask.SetAnimation(MaskState.Idle,true);
+            AnimMask.SetAnimation(MaskState.Idle, true);
         }
     }
 
     #endregion Moving
 
     #region Attack
-    public void MonsterAttack(){
-        if(attackRange.isOnAttackRange == true && isAttack == false) {
-            AnimMask.SetAnimation(MaskState.Attack,false);
+    public void MonsterAttack()
+    {
+        if (attackRange.isOnAttackRange == true && isAttack == false)
+        {
+            AnimMask.SetAnimation(MaskState.Attack, false);
             isAttack = true;
         }
-            AttackCooldown();
+        AttackCooldown();
     }
-    public void AttackCooldown(){
+    public void AttackCooldown()
+    {
         countDownTime -= Time.deltaTime;
-        if(countDownTime <= 0){
+        if (countDownTime <= 0)
+        {
             EndAttack();
         }
     }
-    public void EndAttack(){
+    public void EndAttack()
+    {
         isAttack = false;
-        AnimMask.SetAnimation(MaskState.Idle,true);
-     countDownTime = timeTemp;
+        AnimMask.SetAnimation(MaskState.Idle, true);
+        countDownTime = timeTemp;
     }
     #endregion Attack
-    public void GetHit(){
-        AnimMask.SetAnimation(MaskState.Die,false);
+    public override void GetHit(int dmg)
+    {
+        base.GetHit(dmg);
+        AnimMask.SetAnimation(MaskState.Die, false);
     }
 }
